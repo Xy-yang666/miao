@@ -92,6 +92,17 @@
     .prime ul :nth-child(7n+14) {
       color: purple;
     }
+
+    .prime ul:not(.prime ul :nth-child(2n+4),
+      .prime ul :nth-child(3n+6),
+      .prime ul :nth-child(5n+10),
+      .prime ul :nth-child(7n+14)) {
+      color: cyan
+    }
+
+    .prime ul :first-child {
+      color: black
+    }
   </style>
 </head>
 
