@@ -57,22 +57,45 @@ Released under the MIT license: http://jsbin.mit-license.org
       text-align: center;
     }
 
-    div.c div.d {
+    div.c span {
+      width: 174px;
+      height: 34px;
+      line-height: normal;
+      font-size: 16px;
+      border: 3px solid black;
+      background-color: pink;
+      margin: 0;
+      display: inline-block;
+      text-align: center;
+      vertical-align: middle;
+    }
+
+    div.c div.d,
+    div.c span:nth-child(2),
+    div.c span:first-child {
       margin: 0 30px 0 0;
     }
 
-    :hover #id01,
-    :hover #id02,
-    :hover #id03,
-    :hover #id04,
-    :hover #id05,
-    :hover #id06,
-    :hover #id07,
-    :hover #id08,
-    :hover #id09,
-    :hover #id10,
-    :hover #id11,
-    :hover #id12 {
+
+
+    /* :hover#id01,
+    :hover#id02,
+    :hover#id03,
+    :hover#id04,
+    :hover#id05,
+    :hover#id06,
+    :hover#id07,
+    :hover#id08,
+    :hover#id09,
+    :hover#id10,
+    :hover#id11,
+    :hover#id12 {
+      background-color: red;
+    }
+ */
+
+    div.c div:hover,
+    div.c span:hover {
       background-color: red;
     }
 
@@ -124,6 +147,12 @@ Released under the MIT license: http://jsbin.mit-license.org
     <div class="d" id="id10">边框宽度3px</div>
     <div class="d" id="id11">产品</div>
     <div class="e" id="id12">产品</div>
+  </div>
+
+  <div class="c">
+    <span>宽180高40(包含边框)</span>
+    <span>span</span>
+    <span>span</span>
   </div>
 
 
