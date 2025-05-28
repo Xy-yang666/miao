@@ -57,8 +57,7 @@ Released under the MIT license: http://jsbin.mit-license.org
       vertical-align: top;
       background-color: cornsilk;
       height: 100%;
-      border-left: 2px solid black;
-      border-right: 2px solid black;
+      border: 2px solid black;
     }
 
     h2 {
@@ -66,33 +65,41 @@ Released under the MIT license: http://jsbin.mit-license.org
       line-height: 3em;
       height: 3em;
       margin: 0px;
-      padding-left: 20px;
-      padding-right: 20px;
       text-align: right;
+      padding-right: 20px;
     }
 
     h2.fantasy {
       text-align: left;
+      padding-left: 20px;
+      border-bottom: 2px solid black;
     }
 
     input {
       width: 100px;
-      height: 24px;
+      height: 36px;
       vertical-align: bottom;
-      margin-bottom: 20px;
     }
 
     button {
       border-radius: 5px;
       vertical-align: bottom;
-      margin-bottom: 20px;
+      display: inline-block;
+
     }
+
+
 
     ul {
       list-style: none;
       overflow: auto;
-      height: calc(100% - 96px);
+      height: calc(100% - 108px);
       margin: 0;
+      padding-top: 20px;
+    }
+
+    a {
+      text-decoration: none;
     }
 
     div.fantasy {
@@ -100,7 +107,6 @@ Released under the MIT license: http://jsbin.mit-license.org
       height: calc(100% - 72px);
       margin: 0px;
       padding: 20px;
-      border-top: 2px solid black;
     }
 
     p {
@@ -114,8 +120,11 @@ Released under the MIT license: http://jsbin.mit-license.org
   <div>
     <aside class="OALD Se7en">
       <h2 class="others">OALD Se7en</h2>
+
       <input type="text">
       <button>submit</button>
+
+
       <ul>
         <li><a href="./oald-layout-block.html">word1</a></li>
         <li><a href="./oald-layout-block.html">word2</a></li>
