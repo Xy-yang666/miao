@@ -30,11 +30,13 @@ Released under the MIT license: http://jsbin.mit-license.org
     body>div {
       height: 100%;
       font-size: 0;
-      /* min-width: 1000px; */
+      overflow: auto;
+      min-width: 1000px;
     }
 
     body>div>* {
       font-size: 16px;
+
     }
 
     aside {
@@ -43,6 +45,7 @@ Released under the MIT license: http://jsbin.mit-license.org
       vertical-align: top;
       background-color: pink;
       height: 100%;
+      overflow: auto;
     }
 
     aside.History {
@@ -52,11 +55,11 @@ Released under the MIT license: http://jsbin.mit-license.org
     main {
       width: calc(100% - 3 * 200px);
       display: inline-block;
-      min-width: 300px;
       vertical-align: top;
       background-color: cornsilk;
       height: 100%;
       border: 2px solid black;
+      overflow: auto;
     }
 
     h2 {
