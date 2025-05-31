@@ -13,11 +13,16 @@ Released under the MIT license: http://jsbin.mit-license.org
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
-  <title>JS Bin</title>
+  <title>css-block-layout</title>
   <style id="jsbin-css">
-    * {
+    /*     * {
       background-color: rgba(0, 0, 0, 0.08);
       box-shadow: inset 0 0 1px red;
+    } */
+
+
+    body {
+      margin: 0;
     }
 
     div.a {
@@ -114,19 +119,58 @@ Released under the MIT license: http://jsbin.mit-license.org
     ul {
       list-style: none;
       padding-left: calc(50% - 300px);
-      padding-right: calc(50% - 300px)
+      padding-right: calc(50% - 300px);
+      overflow: hidden;
+    }
+
+    li {
+      border-bottom: 1px dotted black;
+      margin-bottom: -1px;
+    }
+
+    main {
+      width: 600px;
+      margin: auto;
+      overflow: hidden;
+    }
+
+    section {
+      margin-left: -15px;
+      margin-right: -15px;
+      margin-top: -7.5px;
+      margin-bottom: -7.5px;
+      font-size: 0;
+    }
+
+    section span {
+      font-size: 16px;
+      text-align: center;
+      display: inline-block;
+      height: 40px;
+      line-height: 37px;
+      width: 180px;
+      box-sizing: border-box;
+      border: 3px solid black;
+      margin: 7.5px 15px;
+    }
+
+    span:hover {
+      background-color: pink;
     }
   </style>
 </head>
 
 <body>
   <div class="a">
-    hello world 请调整浏览器窗口大小查看效果hello world 请调整浏览器窗口大小查看效果hello world 请调整浏览器窗口大小查看效果hello world 请调整浏览器窗口大小查看效果hello world
+    hello world 请调整浏览器窗口大小查看效果hello world 请调整浏览器窗口大小查看效果hello world 请调整浏览器窗口大小查看效果hello world 请调整浏览器窗口大小查看效果hello
+    world
     请调整浏览器窗口大小查看效果hello world 请调整浏览器窗口大小查看效果
   </div>
 
-  <div class="b">页面主体 宽度600px 页面主体 宽度600px 页面主体 宽度600px 页面主体 宽度600px 页面主体 宽度600px 页面主体 宽度600px 页面主体 宽度600px 页面主体 宽度600px
-    页面主体 宽度600px 页面主体 宽度600px 页面主体 宽度600px 页面主体 宽度600px 页面主体 宽度600px 页面主体 宽度600px 页面主体 宽度600px 页面主体 宽度600px 页面主体 宽度600px
+  <div class="b">页面主体 宽度600px 页面主体 宽度600px 页面主体 宽度600px 页面主体 宽度600px 页面主体 宽度600px 页面主体 宽度600px 页面主体 宽度600px 页面主体
+    宽度600px
+    页面主体 宽度600px 页面主体 宽度600px 页面主体 宽度600px 页面主体 宽度600px 页面主体 宽度600px 页面主体 宽度600px 页面主体 宽度600px 页面主体 宽度600px 页面主体
+    宽度600px
     页面主体 宽度600px
   </div>
 
@@ -154,14 +198,25 @@ Released under the MIT license: http://jsbin.mit-license.org
     <div class="e" id="id12">产品</div>
   </div>
 
-  <div class="c">
-    <span>宽180高40(包含边框)</span>
-    <span>span</span>
-    <span>span</span>
-  </div>
-
+  <main>
+    <section>
+      <span>宽180高40(包含边框)</span>
+      <span>产品</span>
+      <span>产品</span>
+      <span>水平间隙30px</span>
+      <span>产品</span>
+      <span>产品</span>
+      <span>垂直间隙15px</span>
+      <span>产品</span>
+      <span>产品</span>
+      <span>边框宽度3px</span>
+      <span>产品</span>
+      <span>产品</span>
+    </section>
+  </main>
 
   <ul>
+    <li>link</li>
     <li>link</li>
     <li>link</li>
     <li>link</li>
