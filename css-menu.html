@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<!--
+Created using JS Bin
+http://jsbin.com
+
+Copyright (c) 2025 by anonymous (http://jsbin.com/zizacatoca/2/edit)
+
+Released under the MIT license: http://jsbin.mit-license.org
+-->
+<meta name="robots" content="noindex">
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>css-menu</title>
+  <style id="jsbin-css">
+    * {
+      background-color: rgba(0, 0, 0, 0.08);
+      box-shadow: inset 0 0 1px red;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    ul.menu>li {
+      display: inline-block;
+      vertical-align: top;
+    }
+
+    ul.menu li {
+      position: relative;
+      padding: 5px 10px;
+      white-space: nowrap;
+      background-color: gray;
+      color: white;
+    }
+
+    ul.menu li:hover>ul {
+      display: block;
+    }
+
+
+    ul.menu ul {
+      display: none;
+      position: absolute;
+      top: 100%;
+      left: 0;
+    }
+
+    ul.menu ul ul {
+      position: absolute;
+      top: 0;
+      left: 100%;
+    }
+  </style>
+</head>
+
+<body>
+  <ul class="menu">
+    <li>File
+      <ul>
+        <li>New Text File </li>
+        <li>New File... </li>
+        <li>New Window </li>
+        <li>New Window with Profile </li>
+        <li>Open File... </li>
+        <li>Open Folder... </li>
+        <li>Open Workspace from File... </li>
+        <li>Open Recent </li>
+        <li>Add Folder to Workspace... </li>
+        <li>Save Workspace As... </li>
+        <li>Save </li>
+        <li>Save As... </li>
+        <li>Save All </li>
+        <li>Share </li>
+        <li>Auto Save</li>
+        <li>Preferences
+          <ul>
+            <li>Profiles </li>
+            <li>Settings</li>
+            <li>Extensions </li>
+            <li>Keyboard Shortcuts</li>
+            <li>Configure Snippets </li>
+            <li>Tasks </li>
+            <li>Themes
+              <ul>
+                <li>Color Theme</li>
+                <li>File Icon Theme</li>
+                <li>Product Icon Theme</li>
+              </ul>
+            </li>
+            <li>Backup and Sync Settings... </li>
+            <li>Online Services Settings</li>
+          </ul>
+        </li>
+        <li>Revert File</li>
+        <li>Close Editor</li>
+        <li>Close Folder </li>
+        <li>Close Window </li>
+        <li>Exit</li>
+      </ul>
+    </li>
+    <li>Edit</li>
+    <li>Selection</li>
+    <li>View
+      <ul>
+        <li>Command Palette... </li>
+        <li>Open View...</li>
+        <li>Appearance
+          <ul>
+            <li>Full Screen</li>
+            <li>Zen Mode</li>
+            <li>Centered Layout</li>
+            <li>Menu Bar</li>
+            <li>Primary Side Bar</li>
+            <li>Secondary Side Bar</li>
+            <li>Status Bar</li>
+            <li>Panel</li>
+            <li>Move Primary Side Bar Right</li>
+            <li>Activity Bar Position
+              <ul>
+                <li>Default</li>
+                <li>Top</li>
+                <li>Bottom</li>
+                <li>Hidden</li>
+              </ul>
+            </li>
+            <li>Panel Position</li>
+            <li>Align Panel</li>
+            <li>Tab Bar</li>
+            <li>Editor Actions Position</li>
+            <li>Minimap</li>
+            <li>Toggle Breadcrumbs</li>
+            <li>Sticky Scroll</li>
+            <li>Render Whitespace</li>
+            <li>Render Control Characters</li>
+            <li>Zoom In</li>
+            <li>Zoom Out</li>
+            <li>Reset Zoom</li>
+          </ul>
+        </li>
+        <li>Editor Layout</li>
+        <li>Explorer</li>
+        <li>Search </li>
+        <li>Source Control </li>
+        <li>Run </li>
+        <li>Extensions </li>
+        <li>Chat </li>
+        <li>Problems</li>
+        <li>Output</li>
+        <li>Debug Console </li>
+        <li>Terminal</li>
+        <li>Word Wrap </li>
+      </ul>
+    </li>
+    <li>Go</li>
+    <li>Run</li>
+    <li>Terminal</li>
+    <li>Help</li>
+  </ul>
+</body>
+
+</html>
