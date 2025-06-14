@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<!--
+Created using JS Bin
+http://jsbin.com
+
+Copyright (c) 2025 by anonymous (http://jsbin.com/gecinivavo/2/edit)
+
+Released under the MIT license: http://jsbin.mit-license.org
+-->
+<meta name="robots" content="noindex">
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>abs-center</title>
+  <style id="jsbin-css">
+    * {
+      background-color: rgba(0, 0, 0, 0.08);
+      box-shadow: inset 0 0 1px red;
+    }
+
+    html,
+    body,
+    main {
+      margin: 0;
+    }
+
+    section {
+      height: 250px;
+      width: 350px;
+      margin: 10px auto;
+      position: relative;
+      box-sizing: border-box;
+    }
+
+    .id1 {
+      font-size: 0;
+      text-align: center;
+      line-height: 250px;
+
+      & div {
+        height: 150px;
+        width: 120px;
+        font-size: 16px;
+        line-height: normal;
+        display: inline-block;
+        vertical-align: middle;
+      }
+    }
+
+
+
+    .id2 {
+      & div {
+        position: absolute;
+        height: 140px;
+        width: 100px;
+        inset: 0 0 0 0;
+        margin: auto;
+        text-align: center;
+      }
+    }
+
+
+    .id3 {
+      & div {
+        position: absolute;
+        height: 150px;
+        width: 200px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+      }
+    }
+
+
+    .id4 {
+      display: table-cell;
+      vertical-align: middle;
+      text-align: center;
+
+      & div {
+        height: 220px;
+        width: 200px;
+        display: inline-block;
+        text-align: center;
+      }
+    }
+
+
+    .id5 {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      & div {
+        height: 200px;
+        width: 100px;
+        text-align: center;
+      }
+    }
+
+
+    .id6 {
+      display: grid;
+      align-items: center;
+      justify-content: center;
+
+      & div {
+        height: 200px;
+        width: 100px;
+        text-align: center;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <main>
+    <section class="id1">x
+      <div>inline-block</div>
+    </section>
+    <section class="id2">
+      <div>position</div>
+    </section>
+    <section class="id3">
+      <div>position + transform</div>
+    </section>
+    <section class="id4">
+      <div>table-cell</div>
+    </section>
+    <section class="id5">
+      <div>flex</div>
+    </section>
+    <section class="id6">
+      <div>grid</div>
+    </section>
+  </main>
+</body>
+
+</html>
