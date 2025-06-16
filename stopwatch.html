@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<!--
+Created using JS Bin
+http://jsbin.com
+
+Copyright (c) 2025 by anonymous (http://jsbin.com/baleselolu/1/edit)
+
+Released under the MIT license: http://jsbin.mit-license.org
+-->
+<meta name="robots" content="noindex">
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>JS Bin</title>
+  <style id="jsbin-css">
+    * {
+      background-color: rgba(0, 0, 0, 0.08);
+      box-shadow: inset 0 0 1px red;
+    }
+
+    main {
+      height: 600px;
+      width: 600px;
+      position: relative;
+      margin: auto;
+
+      & header {
+        position: relative;
+        height: 100%;
+        width: 100%;
+      }
+    }
+
+    div {
+      position: absolute;
+      inset: 0;
+      margin: auto;
+      height: 20px;
+      width: 20px;
+      line-height: 20px;
+      text-align: center;
+      transform: rotate(calc((var(--index) + 44) * 6deg)) translate(275px) rotate(calc((var(--index) + 44) * -6deg));
+    }
+
+    span {
+      display: inline-block;
+      height: 600px;
+      width: 30px;
+      position: absolute;
+      inset: 0;
+      margin: auto;
+      background-image: url(https://img-cdn.jg.jugem.jp/1ea/2646082/20140120_1935317.png);
+      background-position: -160px 50px;
+      background-repeat: no-repeat;
+      animation: rotation 60s linear infinite;
+    }
+
+    @keyframes rotation {
+      from {
+        transform: rotate(0deg)
+      }
+
+      to {
+        transform: rotate(360deg)
+      }
+    }
+
+    :nth-child(01) {
+      --index: 01
+    }
+
+    :nth-child(02) {
+      --index: 02
+    }
+
+    :nth-child(03) {
+      --index: 03
+    }
+
+    :nth-child(04) {
+      --index: 04
+    }
+
+    :nth-child(05) {
+      --index: 05
+    }
+
+    :nth-child(06) {
+      --index: 06
+    }
+
+    :nth-child(07) {
+      --index: 07
+    }
+
+    :nth-child(08) {
+      --index: 08
+    }
+
+    :nth-child(09) {
+      --index: 09
+    }
+
+    :nth-child(10) {
+      --index: 10
+    }
+
+    :nth-child(11) {
+      --index: 11
+    }
+
+    :nth-child(12) {
+      --index: 12
+    }
+
+    :nth-child(13) {
+      --index: 13
+    }
+
+    :nth-child(14) {
+      --index: 14
+    }
+
+    :nth-child(15) {
+      --index: 15
+    }
+
+    :nth-child(16) {
+      --index: 16
+    }
+
+    :nth-child(17) {
+      --index: 17
+    }
+
+    :nth-child(18) {
+      --index: 18
+    }
+
+    :nth-child(19) {
+      --index: 19
+    }
+
+    :nth-child(20) {
+      --index: 20
+    }
+
+    :nth-child(21) {
+      --index: 21
+    }
+
+    :nth-child(22) {
+      --index: 22
+    }
+
+    :nth-child(23) {
+      --index: 23
+    }
+
+    :nth-child(24) {
+      --index: 24
+    }
+
+    :nth-child(25) {
+      --index: 25
+    }
+
+    :nth-child(26) {
+      --index: 26
+    }
+
+    :nth-child(27) {
+      --index: 27
+    }
+
+    :nth-child(28) {
+      --index: 28
+    }
+
+    :nth-child(29) {
+      --index: 29
+    }
+
+    :nth-child(30) {
+      --index: 30
+    }
+
+    :nth-child(31) {
+      --index: 31
+    }
+
+    :nth-child(32) {
+      --index: 32
+    }
+
+    :nth-child(33) {
+      --index: 33
+    }
+
+    :nth-child(34) {
+      --index: 34
+    }
+
+    :nth-child(35) {
+      --index: 35
+    }
+
+    :nth-child(36) {
+      --index: 36
+    }
+
+    :nth-child(37) {
+      --index: 37
+    }
+
+    :nth-child(38) {
+      --index: 38
+    }
+
+    :nth-child(39) {
+      --index: 39
+    }
+
+    :nth-child(40) {
+      --index: 40
+    }
+
+    :nth-child(41) {
+      --index: 41
+    }
+
+    :nth-child(42) {
+      --index: 42
+    }
+
+    :nth-child(43) {
+      --index: 43
+    }
+
+    :nth-child(44) {
+      --index: 44
+    }
+
+    :nth-child(45) {
+      --index: 45
+    }
+
+    :nth-child(46) {
+      --index: 46
+    }
+
+    :nth-child(47) {
+      --index: 47
+    }
+
+    :nth-child(48) {
+      --index: 48
+    }
+
+    :nth-child(49) {
+      --index: 49
+    }
+
+    :nth-child(50) {
+      --index: 50
+    }
+
+    :nth-child(51) {
+      --index: 51
+    }
+
+    :nth-child(52) {
+      --index: 52
+    }
+
+    :nth-child(53) {
+      --index: 53
+    }
+
+    :nth-child(54) {
+      --index: 54
+    }
+
+    :nth-child(55) {
+      --index: 55
+    }
+
+    :nth-child(56) {
+      --index: 56
+    }
+
+    :nth-child(57) {
+      --index: 57
+    }
+
+    :nth-child(58) {
+      --index: 58
+    }
+
+    :nth-child(59) {
+      --index: 59
+    }
+
+    :nth-child(60) {
+      --index: 60
+    }
+  </style>
+</head>
+
+<body>
+  <main>
+    <header>
+      <span></span>
+      <div>1</div>
+      <div>2</div>
+      <div>3</div>
+      <div>4</div>
+      <div>5</div>
+      <div>6</div>
+      <div>7</div>
+      <div>8</div>
+      <div>9</div>
+      <div>10</div>
+      <div>11</div>
+      <div>12</div>
+      <div>13</div>
+      <div>14</div>
+      <div>15</div>
+      <div>16</div>
+      <div>17</div>
+      <div>18</div>
+      <div>19</div>
+      <div>20</div>
+      <div>21</div>
+      <div>22</div>
+      <div>23</div>
+      <div>24</div>
+      <div>25</div>
+      <div>26</div>
+      <div>27</div>
+      <div>28</div>
+      <div>29</div>
+      <div>30</div>
+      <div>31</div>
+      <div>32</div>
+      <div>33</div>
+      <div>34</div>
+      <div>35</div>
+      <div>36</div>
+      <div>37</div>
+      <div>38</div>
+      <div>39</div>
+      <div>40</div>
+      <div>41</div>
+      <div>42</div>
+      <div>43</div>
+      <div>44</div>
+      <div>45</div>
+      <div>46</div>
+      <div>47</div>
+      <div>48</div>
+      <div>49</div>
+      <div>50</div>
+      <div>51</div>
+      <div>52</div>
+      <div>53</div>
+      <div>54</div>
+      <div>55</div>
+      <div>56</div>
+      <div>57</div>
+      <div>58</div>
+      <div>59</div>
+      <div>60</div>
+    </header>
+
+  </main>
+
+
+
+</body>
+
+</html>
