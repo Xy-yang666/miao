@@ -1,0 +1,740 @@
+<!DOCTYPE html>
+<html lang="en" class="overflow-y-scroll">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mi-index</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="mi-iconfont-style.css">
+    <style>
+        @layer base {
+            /* * {
+                background-color: rgba(0, 0, 0, 0.08);
+                box-shadow: inset 0 0 1px red;
+                box-sizing: border-box;
+            } */
+
+            * {
+                --unit: 20px;
+            }
+        }
+
+        @keyframes leaving {
+            from {
+                left: 0;
+            }
+
+            to {
+                left: -100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="h-[40px] bg-[#333] ">
+        <div class="m-auto w-[1226px] h-[40px] text-[12px]/[40px]">
+            <span class="text-[#b0b0b0] inline-block"><a href="https://www.mi.com/index.html">小米官网</a></span>
+            <span class="text-[#424242] m-[.3em]">|</span>
+            <span class="text-[#b0b0b0] inline-block"><a href="https://www.mi.com/shop">小米商城</a></span>
+            <span class="text-[#424242] m-[.3em]">|</span>
+            <span class="text-[#b0b0b0] inline-block"><a href="https://hyperos.mi.com/">小米澎湃OS</a></span>
+            <span class="text-[#424242] m-[.3em]">|</span>
+            <span class="text-[#b0b0b0] inline-block"><a href="https://www.xiaomiev.com/">小米汽车</a></span>
+            <span class="text-[#424242] m-[.3em]">|</span>
+            <span class="text-[#b0b0b0] inline-block"><a href="https://i.mi.com/">云服务</a></span>
+            <span class="text-[#424242] m-[.3em]">|</span>
+            <span class="text-[#b0b0b0] inline-block"><a href="https://iot.mi.com/">IoT</a></span>
+            <span class="text-[#424242] m-[.3em]">|</span>
+            <span class="text-[#b0b0b0] inline-block"><a href="https://www.xiaomiyoupin.com/">有品</a></span>
+            <span class="text-[#424242] m-[.3em]">|</span>
+            <span class="text-[#b0b0b0] inline-block"><a href="https://xiaoai.mi.com/">小爱开放平台</a></span>
+            <span class="text-[#424242] m-[.3em]">|</span>
+            <span class="text-[#b0b0b0] inline-block"><a
+                    href="https://www.mi.com/shop/aptitude/list?id=88">资质执照</a></span>
+            <span class="text-[#424242] m-[.3em]">|</span>
+            <span class="text-[#b0b0b0] inline-block"><a
+                    href="https://www.mi.com/shop/aptitude/list?id=88">协议规则</a></span>
+            <span class="text-[#424242] m-[.3em]">|</span>
+            <span class="text-[#b0b0b0] inline-block"><a href="https://www.mi.com/appdownload">下载app</a></span>
+            <span class="text-[#424242] m-[.3em]">|</span>
+            <span class="text-[#b0b0b0] inline-block"><a href="#">Select Location</a></span>
+
+            <div
+                class="text-[#b0b0b0] inline-block float-right w-[120px] ml-[15px] text-center bg-[#424242] group relative hover:text-[#ff6700] hover:bg-[#fff] ">
+                <span class="iconfont-cart mr-[4px] text-[20px]/[40px] align-top inline-block"></span>
+                <span class="align-top inline-block">购物车 (0) </span>
+                <div
+                    class="w-[316px] h-[100px] absolute top-[100%] right-0 text-[#424242] shadow-xl hidden hover:block group-hover:flex">
+                    <span class="inline-block content-center w-[316px] h-[100px] relative z-10 bg-white">
+                        购物车中还没有商品，赶紧选购吧！
+                    </span>
+                </div>
+            </div>
+
+            <div class="float-right right-[120px]">
+                <span class="text-[#b0b0b0] inline-block"><a href="#">登录</a></span>
+                <span class="text-[#424242] m-[.3em]">|</span>
+                <span class="text-[#b0b0b0] inline-block"><a href="#">注册</a></span>
+                <span class="text-[#424242] m-[.3em]">|</span>
+                <span class="text-[#b0b0b0] inline-block"><a href="#">消息通知</a></span>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="w-[100%] h-[100px] relative">
+        <div class="m-auto w-[1226px] h-[100px] flex items-center">
+            <div
+                class="bg-[url(https://cdn.cnbj1.fds.api.mi-img.com/mi.com-assets/shop/img/logo-mi2.png)] w-[234px] h-[56px] bg-size-[56px] bg-no-repeat">
+            </div>
+            <ul class="flex h-[90px]  text-[16px] mt-[10px] group/ul">
+                <li class="px-[10px] group/li leading-[80px] ">Xiaomi手机
+                    <div
+                        class="w-full h-[0] overflow-hidden absolute left-[0px] top-[100%] bg-white shadow-lg group-hover/ul:z-20 transition-all z-10 delay-[500ms,0] group-hover/li:duration-[1000ms,0] transition-[height, z-index] hover:h-[230px] group-hover/ul:h-[230px]">
+                        <div class="w-[1226px] h-[201px] mx-auto">
+                            <ul class="flex justify-center">
+                                <li
+                                    class="w-[204px] h-[201px] flex after:content-[''] after:border after:border-[#e0e0e0] after:h-[100px] after:mt-[35px]">
+                                    <a href="https://www.mi.com/shop/buy/detail?product_id=21305" target="_blank"
+                                        class="w-[180px] h-[166px] mx-auto mt-auto">
+                                        <div class="w-[160px] h-[110px] mx-auto mb-[16px]">
+                                            <img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/ccb333fb5e8dae8ea011e8e968b05627.png?thumb=1&w=240&h=165&f=webp&q=90"
+                                                alt="" class="w-[160px] h-[110px] mx-auto">
+                                        </div>
+                                        <div class="text-[12px]/[20px] text-center">Xiaomi 15S Pro</div>
+                                        <p class="text-[12px]/[20px] text-center text-[#ff6700]">5499元起</p>
+                                    </a>
+                                </li>
+                                <li
+                                    class="w-[204px] h-[201px] flex after:content-[''] after:border after:border-[#e0e0e0] after:h-[100px] after:mt-[35px]">
+                                    <a href="https://www.mi.com/shop/buy/detail?product_id=21305" target="_blank"
+                                        class="w-[180px] h-[166px] mx-auto mt-auto">
+                                        <div class="w-[160px] h-[110px] mx-auto mb-[16px]">
+                                            <img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/ccb333fb5e8dae8ea011e8e968b05627.png?thumb=1&w=240&h=165&f=webp&q=90"
+                                                alt="" class="w-[160px] h-[110px] mx-auto">
+                                        </div>
+                                        <div class="text-[12px]/[20px] text-center">Xiaomi 15S Pro</div>
+                                        <p class="text-[12px]/[20px] text-center text-[#ff6700]">5499元起</p>
+                                    </a>
+                                </li>
+                                <li
+                                    class="w-[204px] h-[201px] flex after:content-[''] after:border after:border-[#e0e0e0] after:h-[100px] after:mt-[35px]">
+                                    <a href="https://www.mi.com/shop/buy/detail?product_id=21305" target="_blank"
+                                        class="w-[180px] h-[166px] mx-auto mt-auto">
+                                        <div class="w-[160px] h-[110px] mx-auto mb-[16px]">
+                                            <img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/ccb333fb5e8dae8ea011e8e968b05627.png?thumb=1&w=240&h=165&f=webp&q=90"
+                                                alt="" class="w-[160px] h-[110px] mx-auto">
+                                        </div>
+                                        <div class="text-[12px]/[20px] text-center">Xiaomi 15S Pro</div>
+                                        <p class="text-[12px]/[20px] text-center text-[#ff6700]">5499元起</p>
+                                    </a>
+                                </li>
+                                <li
+                                    class="w-[204px] h-[201px] flex after:content-[''] after:border after:border-[#e0e0e0] after:h-[100px] after:mt-[35px]">
+                                    <a href="https://www.mi.com/shop/buy/detail?product_id=21305" target="_blank"
+                                        class="w-[180px] h-[166px] mx-auto mt-auto">
+                                        <div class="w-[160px] h-[110px] mx-auto mb-[16px]">
+                                            <img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/ccb333fb5e8dae8ea011e8e968b05627.png?thumb=1&w=240&h=165&f=webp&q=90"
+                                                alt="" class="w-[160px] h-[110px] mx-auto">
+                                        </div>
+                                        <div class="text-[12px]/[20px] text-center">Xiaomi 15S Pro</div>
+                                        <p class="text-[12px]/[20px] text-center text-[#ff6700]">5499元起</p>
+                                    </a>
+                                </li>
+                                <li
+                                    class="w-[204px] h-[201px] flex after:content-[''] after:border after:border-[#e0e0e0] after:h-[100px] after:mt-[35px]">
+                                    <a href="https://www.mi.com/shop/buy/detail?product_id=21305" target="_blank"
+                                        class="w-[180px] h-[166px] mx-auto mt-auto">
+                                        <div class="w-[160px] h-[110px] mx-auto mb-[16px]">
+                                            <img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/ccb333fb5e8dae8ea011e8e968b05627.png?thumb=1&w=240&h=165&f=webp&q=90"
+                                                alt="" class="w-[160px] h-[110px] mx-auto">
+                                        </div>
+                                        <div class="text-[12px]/[20px] text-center">Xiaomi 15S Pro</div>
+                                        <p class="text-[12px]/[20px] text-center text-[#ff6700]">5499元起</p>
+                                    </a>
+                                </li>
+                                <li class="w-[204px] h-[201px] flex">
+                                    <a href="https://www.mi.com/shop/buy/detail?product_id=21305" target="_blank"
+                                        class="w-[180px] h-[166px] mx-auto mt-auto">
+                                        <div class="w-[160px] h-[110px] mx-auto mb-[16px]">
+                                            <img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/ccb333fb5e8dae8ea011e8e968b05627.png?thumb=1&w=240&h=165&f=webp&q=90"
+                                                alt="" class="w-[160px] h-[110px] mx-auto">
+                                        </div>
+                                        <div class="text-[12px]/[20px] text-center">Xiaomi 15S Pro</div>
+                                        <p class="text-[12px]/[20px] text-center text-[#ff6700]">5499元起</p>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li class="px-[10px] group/li leading-[80px]">REDMI手机
+                    <div
+                        class="w-full h-[0] overflow-hidden absolute left-[0px] top-[100%] bg-white shadow-lg group-hover/li:z-20 transition-all z-10 delay-[500ms,0] group-hover/li:duration-[1000ms,0] transition-[height, z-index] hover:h-[230px] group-hover/ul:h-[230px]">
+                        <div class="w-[1226px] h-[201px] mx-auto">
+                            <ul class="flex justify-center">
+                                <li
+                                    class="w-[204px] h-[201px] flex after:content-[''] after:border after:border-[#e0e0e0] after:h-[100px] after:mt-[35px]">
+                                    <a href="https://www.mi.com/shop/buy/detail?product_id=21136" target="_blank"
+                                        class="w-[180px] h-[166px] mx-auto mt-auto">
+                                        <div class="w-[160px] h-[110px] mx-auto mb-[16px]">
+                                            <img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/71823969897e947e40c9889a12b96a12.png?thumb=1&w=240&h=165&f=webp&q=90"
+                                                alt="" class="w-[160px] h-[110px] mx-auto">
+                                        </div>
+                                        <div class="text-[12px]/[20px] text-center">REDMI Turbo 4 Pro</div>
+                                        <p class="text-[12px]/[20px] text-center text-[#ff6700]">1999元起</p>
+                                    </a>
+                                </li>
+                                <li
+                                    class="w-[204px] h-[201px] flex after:content-[''] after:border after:border-[#e0e0e0] after:h-[100px] after:mt-[35px]">
+                                    <a href="https://www.mi.com/shop/buy/detail?product_id=21136" target="_blank"
+                                        class="w-[180px] h-[166px] mx-auto mt-auto">
+                                        <div class="w-[160px] h-[110px] mx-auto mb-[16px]">
+                                            <img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/71823969897e947e40c9889a12b96a12.png?thumb=1&w=240&h=165&f=webp&q=90"
+                                                alt="" class="w-[160px] h-[110px] mx-auto">
+                                        </div>
+                                        <div class="text-[12px]/[20px] text-center">REDMI Turbo 4 Pro</div>
+                                        <p class="text-[12px]/[20px] text-center text-[#ff6700]">1999元起</p>
+                                    </a>
+                                </li>
+                                <li
+                                    class="w-[204px] h-[201px] flex after:content-[''] after:border after:border-[#e0e0e0] after:h-[100px] after:mt-[35px]">
+                                    <a href="https://www.mi.com/shop/buy/detail?product_id=21136" target="_blank"
+                                        class="w-[180px] h-[166px] mx-auto mt-auto">
+                                        <div class="w-[160px] h-[110px] mx-auto mb-[16px]">
+                                            <img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/71823969897e947e40c9889a12b96a12.png?thumb=1&w=240&h=165&f=webp&q=90"
+                                                alt="" class="w-[160px] h-[110px] mx-auto">
+                                        </div>
+                                        <div class="text-[12px]/[20px] text-center">REDMI Turbo 4 Pro</div>
+                                        <p class="text-[12px]/[20px] text-center text-[#ff6700]">1999元起</p>
+                                    </a>
+                                </li>
+                                <li
+                                    class="w-[204px] h-[201px] flex after:content-[''] after:border after:border-[#e0e0e0] after:h-[100px] after:mt-[35px]">
+                                    <a href="https://www.mi.com/shop/buy/detail?product_id=21136" target="_blank"
+                                        class="w-[180px] h-[166px] mx-auto mt-auto">
+                                        <div class="w-[160px] h-[110px] mx-auto mb-[16px]">
+                                            <img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/71823969897e947e40c9889a12b96a12.png?thumb=1&w=240&h=165&f=webp&q=90"
+                                                alt="" class="w-[160px] h-[110px] mx-auto">
+                                        </div>
+                                        <div class="text-[12px]/[20px] text-center">REDMI Turbo 4 Pro</div>
+                                        <p class="text-[12px]/[20px] text-center text-[#ff6700]">1999元起</p>
+                                    </a>
+                                </li>
+                                <li
+                                    class="w-[204px] h-[201px] flex after:content-[''] after:border after:border-[#e0e0e0] after:h-[100px] after:mt-[35px]">
+                                    <a href="https://www.mi.com/shop/buy/detail?product_id=21136" target="_blank"
+                                        class="w-[180px] h-[166px] mx-auto mt-auto">
+                                        <div class="w-[160px] h-[110px] mx-auto mb-[16px]">
+                                            <img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/71823969897e947e40c9889a12b96a12.png?thumb=1&w=240&h=165&f=webp&q=90"
+                                                alt="" class="w-[160px] h-[110px] mx-auto">
+                                        </div>
+                                        <div class="text-[12px]/[20px] text-center">REDMI Turbo 4 Pro</div>
+                                        <p class="text-[12px]/[20px] text-center text-[#ff6700]">1999元起</p>
+                                    </a>
+                                </li>
+                                <li class="w-[204px] h-[201px] flex">
+                                    <a href="https://www.mi.com/shop/buy/detail?product_id=21136" target="_blank"
+                                        class="w-[180px] h-[166px] mx-auto mt-auto">
+                                        <div class="w-[160px] h-[110px] mx-auto mb-[16px]">
+                                            <img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/71823969897e947e40c9889a12b96a12.png?thumb=1&w=240&h=165&f=webp&q=90"
+                                                alt="" class="w-[160px] h-[110px] mx-auto">
+                                        </div>
+                                        <div class="text-[12px]/[20px] text-center">REDMI Turbo 4 Pro</div>
+                                        <p class="text-[12px]/[20px] text-center text-[#ff6700]">1999元起</p>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li class="px-[10px] group/li leading-[80px]">电视
+                    <div
+                        class="w-full h-[0] overflow-hidden absolute left-[0px] top-[100%] bg-white shadow-lg group-hover/li:z-20 transition-all z-10 delay-[500ms,0] group-hover/li:duration-[1000ms,0] transition-[height, z-index] hover:h-[230px] group-hover/ul:h-[230px]">
+                        <div class="w-[1226px] h-[201px] mx-auto">
+                            <ul class="flex justify-center">
+                                <li
+                                    class="w-[204px] h-[201px] flex after:content-[''] after:border after:border-[#e0e0e0] after:h-[100px] after:mt-[35px]">
+                                    <a href="https://www.mi.com/shop/buy/detail?product_id=10050111" target="_blank"
+                                        class="w-[180px] h-[166px] mx-auto mt-auto">
+                                        <div class="w-[160px] h-[110px] mx-auto mb-[16px]">
+                                            <img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/82ce1e9b7ef43567d80a9a7157b755f3.png?thumb=1&w=240&h=165&f=webp&q=90"
+                                                alt="" class="w-[160px] h-[110px] mx-auto">
+                                        </div>
+                                        <div class="text-[12px]/[20px] text-center">旗舰系列-S Mini LED 2025</div>
+                                        <p class="text-[12px]/[20px] text-center text-[#ff6700]">3799元起</p>
+                                    </a>
+                                </li>
+                                <li
+                                    class="w-[204px] h-[201px] flex after:content-[''] after:border after:border-[#e0e0e0] after:h-[100px] after:mt-[35px]">
+                                    <a href="https://www.mi.com/shop/buy/detail?product_id=10050111" target="_blank"
+                                        class="w-[180px] h-[166px] mx-auto mt-auto">
+                                        <div class="w-[160px] h-[110px] mx-auto mb-[16px]">
+                                            <img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/82ce1e9b7ef43567d80a9a7157b755f3.png?thumb=1&w=240&h=165&f=webp&q=90"
+                                                alt="" class="w-[160px] h-[110px] mx-auto">
+                                        </div>
+                                        <div class="text-[12px]/[20px] text-center">旗舰系列-S Mini LED 2025</div>
+                                        <p class="text-[12px]/[20px] text-center text-[#ff6700]">3799元起</p>
+                                    </a>
+                                </li>
+                                <li
+                                    class="w-[204px] h-[201px] flex after:content-[''] after:border after:border-[#e0e0e0] after:h-[100px] after:mt-[35px]">
+                                    <a href="https://www.mi.com/shop/buy/detail?product_id=10050111" target="_blank"
+                                        class="w-[180px] h-[166px] mx-auto mt-auto">
+                                        <div class="w-[160px] h-[110px] mx-auto mb-[16px]">
+                                            <img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/82ce1e9b7ef43567d80a9a7157b755f3.png?thumb=1&w=240&h=165&f=webp&q=90"
+                                                alt="" class="w-[160px] h-[110px] mx-auto">
+                                        </div>
+                                        <div class="text-[12px]/[20px] text-center">旗舰系列-S Mini LED 2025</div>
+                                        <p class="text-[12px]/[20px] text-center text-[#ff6700]">3799元起</p>
+                                    </a>
+                                </li>
+                                <li
+                                    class="w-[204px] h-[201px] flex after:content-[''] after:border after:border-[#e0e0e0] after:h-[100px] after:mt-[35px]">
+                                    <a href="https://www.mi.com/shop/buy/detail?product_id=10050111" target="_blank"
+                                        class="w-[180px] h-[166px] mx-auto mt-auto">
+                                        <div class="w-[160px] h-[110px] mx-auto mb-[16px]">
+                                            <img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/82ce1e9b7ef43567d80a9a7157b755f3.png?thumb=1&w=240&h=165&f=webp&q=90"
+                                                alt="" class="w-[160px] h-[110px] mx-auto">
+                                        </div>
+                                        <div class="text-[12px]/[20px] text-center">旗舰系列-S Mini LED 2025</div>
+                                        <p class="text-[12px]/[20px] text-center text-[#ff6700]">3799元起</p>
+                                    </a>
+                                </li>
+                                <li
+                                    class="w-[204px] h-[201px] flex after:content-[''] after:border after:border-[#e0e0e0] after:h-[100px] after:mt-[35px]">
+                                    <a href="https://www.mi.com/shop/buy/detail?product_id=10050111" target="_blank"
+                                        class="w-[180px] h-[166px] mx-auto mt-auto">
+                                        <div class="w-[160px] h-[110px] mx-auto mb-[16px]">
+                                            <img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/82ce1e9b7ef43567d80a9a7157b755f3.png?thumb=1&w=240&h=165&f=webp&q=90"
+                                                alt="" class="w-[160px] h-[110px] mx-auto">
+                                        </div>
+                                        <div class="text-[12px]/[20px] text-center">旗舰系列-S Mini LED 2025</div>
+                                        <p class="text-[12px]/[20px] text-center text-[#ff6700]">3799元起</p>
+                                    </a>
+                                </li>
+                                <li class="w-[204px] h-[201px] flex">
+                                    <a href="https://www.mi.com/shop/buy/detail?product_id=10050111" target="_blank"
+                                        class="w-[180px] h-[166px] mx-auto mt-auto">
+                                        <div class="w-[160px] h-[110px] mx-auto mb-[16px]">
+                                            <img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/82ce1e9b7ef43567d80a9a7157b755f3.png?thumb=1&w=240&h=165&f=webp&q=90"
+                                                alt="" class="w-[160px] h-[110px] mx-auto">
+                                        </div>
+                                        <div class="text-[12px]/[20px] text-center">旗舰系列-S Mini LED 2025</div>
+                                        <p class="text-[12px]/[20px] text-center text-[#ff6700]">3799元起</p>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li class="px-[10px] leading-[80px]">笔记本</li>
+                <li class="px-[10px] leading-[80px]">平板</li>
+                <li class="px-[10px] leading-[80px]">家电</li>
+                <li class="px-[10px] leading-[80px]">路由器</li>
+            </ul>
+            <ul class="flex h-[90px]  text-[16px] mt-[10px]">
+                <li class="px-[10px] leading-[80px]"><a href="https://www.mi.com/service" target="_blank">服务中心</a></li>
+                <li class="px-[10px] leading-[80px]"><a href="https://www.xiaomi.cn/" target="_blank">社区</a></li>
+            </ul>
+
+
+
+
+
+            <div class="grow justify-end flex">
+                <form action="https://www.mi.com/shop/search" target="_blank" class="flex relative">
+                    <input type="text" placeholder="手机换新" name="keyword"
+                        class="w-[250px] h-[50px] outline-none p-2 peer border border-gray-400 focus:border-orange-400 hover:border-gray-600 ">
+                    <button
+                        class="w-[52px] h-[50px] border border-l-[0px] border-gray-400 group hover:bg-orange-400 peer-focus:border-orange-400 peer-hover:border-gray-600">
+                        <div class="iconfont-search text-[24px]/[50px] group-hover:text-white"></div>
+                    </button>
+                    <ul
+                        class="absolute z-10 bg-white top-[50px] left-[0px] px-2 text-[14px] w-[250px] h-[240px] border border-orange-400 text-[#333] hidden hover:block peer-hover:block">
+                        <li class="w-[full] h-[30px]"><a href="https://www.mi.com/shop/search?keyword=手机换新">手机换新</a>
+                        </li>
+                        <li class="w-[full] h-[30px]"><a href="https://www.mi.com/shop/search?keyword=手机换新">空调</a></li>
+                        <li class="w-[full] h-[30px]"><a href="https://www.mi.com/shop/search?keyword=Redmi&nbsp;
+                                K80">Redmi
+                                K80</a></li>
+                        <li class="w-[full] h-[30px]"><a href="https://www.mi.com/shop/search?keyword=电视">电视</a></li>
+                        <li class="w-[full] h-[30px]"><a href="https://www.mi.com/shop/search?keyword=风扇">风扇</a></li>
+                        <li class="w-[full] h-[30px]"><a href="https://www.mi.com/shop/search?keyword=吸顶灯">吸顶灯</a></li>
+                        <li class="w-[full] h-[30px]"><a href="https://www.mi.com/shop/search?keyword=扫地机器人">扫地机器人</a>
+                        </li>
+                        <li class="w-[full] h-[30px]"><a
+                                href="https://www.mi.com/shop/search?keyword=小米手环9&nbsp;Pro">小米手环9 Pro</a></li>
+                    </ul>
+
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="w-[1226px] h-[460px] m-auto relative overflow-hidden">
+        <div class="w-[234px] h-[100%] bg-[#333] text-white flex items-center relative z-5">
+            <ul class="text-[14px] h-full grow flex flex-col">
+                <li class="grow w-full pl-[30px] flex items-center group">
+                    手机
+                    <span class="iconfont-arrow-right-big text-[16px] grow pr-[20px] text-right "></span>
+
+                    <ul
+                        class=" absolute h-full left-full top-[0px] bg-white text-black grid grid-flow-col grid-rows-[repeat(6,1fr)] shadow-xl hidden group-hover:grid">
+                        <li class="w-[265px] h-[76px] flex m-auto"><a
+                                href="https://www.mi.com/shop/search?keyword=xiaomi%E6%95%B0%E5%AD%97%E7%B3%BB%E5%88%97"
+                                class="w-full h-full px-[20px] py-[18px] flex items-center"> <img
+                                    class="w-[40px] h-[40px] mr-[12px]"
+                                    src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/182d59037498cad87202c36e1a8ea23c.png?thumb=1&w=60&h=60&f=webp&q=90"
+                                    alt=""> Xiaomi 数字旗舰</a></li>
+                        <li class="w-[265px] h-[76px] flex m-auto"><a
+                                href="https://www.mi.com/shop/search?keyword=xiaomi%E6%95%B0%E5%AD%97%E7%B3%BB%E5%88%97"
+                                class="w-full h-full px-[20px] py-[18px] flex items-center"> <img
+                                    class="w-[40px] h-[40px] mr-[12px]"
+                                    src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/182d59037498cad87202c36e1a8ea23c.png?thumb=1&w=60&h=60&f=webp&q=90"
+                                    alt=""> Xiaomi MIX系列</a> </li>
+                        <li class="w-[265px] h-[76px] flex m-auto"><a
+                                href="https://www.mi.com/shop/search?keyword=xiaomi%E6%95%B0%E5%AD%97%E7%B3%BB%E5%88%97"
+                                class="w-full h-full px-[20px] py-[18px] flex items-center"> <img
+                                    class="w-[40px] h-[40px] mr-[12px]"
+                                    src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/182d59037498cad87202c36e1a8ea23c.png?thumb=1&w=60&h=60&f=webp&q=90"
+                                    alt=""> Xiaomi Civi系列</a> </li>
+                        <li class="w-[265px] h-[76px] flex m-auto"><a
+                                href="https://www.mi.com/shop/search?keyword=xiaomi%E6%95%B0%E5%AD%97%E7%B3%BB%E5%88%97"
+                                class="w-full h-full px-[20px] py-[18px] flex items-center"> <img
+                                    class="w-[40px] h-[40px] mr-[12px]"
+                                    src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/182d59037498cad87202c36e1a8ea23c.png?thumb=1&w=60&h=60&f=webp&q=90"
+                                    alt=""> Redmi K系列</a> </li>
+                        <li class="w-[265px] h-[76px] flex m-auto"><a
+                                href="https://www.mi.com/shop/search?keyword=xiaomi%E6%95%B0%E5%AD%97%E7%B3%BB%E5%88%97"
+                                class="w-full h-full px-[20px] py-[18px] flex items-center"> <img
+                                    class="w-[40px] h-[40px] mr-[12px]"
+                                    src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/182d59037498cad87202c36e1a8ea23c.png?thumb=1&w=60&h=60&f=webp&q=90"
+                                    alt=""> Redmi Turbo系列</a> </li>
+                        <li class="w-[265px] h-[76px] flex m-auto"><a
+                                href="https://www.mi.com/shop/search?keyword=xiaomi%E6%95%B0%E5%AD%97%E7%B3%BB%E5%88%97"
+                                class="w-full h-full px-[20px] py-[18px] flex items-center"> <img
+                                    class="w-[40px] h-[40px] mr-[12px]"
+                                    src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/182d59037498cad87202c36e1a8ea23c.png?thumb=1&w=60&h=60&f=webp&q=90"
+                                    alt=""> Redmi Note系列</a> </li>
+                        <li class="w-[265px] h-[76px] flex m-auto"><a
+                                href="https://www.mi.com/shop/search?keyword=xiaomi%E6%95%B0%E5%AD%97%E7%B3%BB%E5%88%97"
+                                class="w-full h-full px-[20px] py-[18px] flex items-center"> <img
+                                    class="w-[40px] h-[40px] mr-[12px]"
+                                    src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/182d59037498cad87202c36e1a8ea23c.png?thumb=1&w=60&h=60&f=webp&q=90"
+                                    alt=""> Redmi 数字系列</a> </li>
+                    </ul>
+
+                </li>
+                <li class="grow w-full pl-[30px] flex items-center group">
+                    电视
+                    <span class="iconfont-arrow-right-big text-[16px] grow pr-[20px] text-right "></span>
+                    <ul
+                        class=" absolute h-full left-full top-[0px] text-[14px] bg-white text-black grid grid-flow-col grid-rows-[repeat(6,1fr)] shadow-xl hidden group-hover:grid">
+                        <li class="w-[265px] h-[76px] flex m-auto"><a
+                                href="https://www.mi.com/shop/buy/detail?product_id=10050111"
+                                class="w-full h-full px-[20px] py-[18px] flex items-center">
+                                <img class="w-[40px] h-[40px] mr-[12px]"
+                                    src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/e831b62c0f720a7b038bff519ab29676.png?thumb=1&w=60&h=60&f=webp&q=90"
+                                    alt=""> 旗舰系列-S Mini LED 2025</a> </li>
+                        <li class="w-[265px] h-[76px] flex m-auto"><a
+                                href="https://www.mi.com/shop/buy/detail?product_id=10050111"
+                                class="w-full h-full px-[20px] py-[18px] flex items-center">
+                                <img class="w-[40px] h-[40px] mr-[12px]"
+                                    src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/e831b62c0f720a7b038bff519ab29676.png?thumb=1&w=60&h=60&f=webp&q=90"
+                                    alt=""> Xiaomi
+                                MIX系列</a> </li>
+                        <li class="w-[265px] h-[76px] flex m-auto"><a
+                                href="https://www.mi.com/shop/buy/detail?product_id=10050111"
+                                class="w-full h-full px-[20px] py-[18px] flex items-center">
+                                <img class="w-[40px] h-[40px] mr-[12px]"
+                                    src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/e831b62c0f720a7b038bff519ab29676.png?thumb=1&w=60&h=60&f=webp&q=90"
+                                    alt=""> Xiaomi
+                                Civi系列</a> </li>
+                        <li class="w-[265px] h-[76px] flex m-auto"><a
+                                href="https://www.mi.com/shop/buy/detail?product_id=10050111"
+                                class="w-full h-full px-[20px] py-[18px] flex items-center">
+                                <img class="w-[40px] h-[40px] mr-[12px]"
+                                    src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/e831b62c0f720a7b038bff519ab29676.png?thumb=1&w=60&h=60&f=webp&q=90"
+                                    alt=""> Redmi
+                                K系列</a> </li>
+                        <li class="w-[265px] h-[76px] flex m-auto"><a
+                                href="https://www.mi.com/shop/buy/detail?product_id=10050111"
+                                class="w-full h-full px-[20px] py-[18px] flex items-center">
+                                <img class="w-[40px] h-[40px] mr-[12px]"
+                                    src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/e831b62c0f720a7b038bff519ab29676.png?thumb=1&w=60&h=60&f=webp&q=90"
+                                    alt=""> Redmi
+                                Turbo系列</a> </li>
+                        <li class="w-[265px] h-[76px] flex m-auto"><a
+                                href="https://www.mi.com/shop/buy/detail?product_id=10050111"
+                                class="w-full h-full px-[20px] py-[18px] flex items-center">
+                                <img class="w-[40px] h-[40px] mr-[12px]"
+                                    src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/e831b62c0f720a7b038bff519ab29676.png?thumb=1&w=60&h=60&f=webp&q=90"
+                                    alt=""> Redmi
+                                Note系列</a> </li>
+                        <li class="w-[265px] h-[76px] flex m-auto"><a
+                                href="https://www.mi.com/shop/buy/detail?product_id=10050111"
+                                class="w-full h-full px-[20px] py-[18px] flex items-center">
+                                <img class="w-[40px] h-[40px] mr-[12px]"
+                                    src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/e831b62c0f720a7b038bff519ab29676.png?thumb=1&w=60&h=60&f=webp&q=90"
+                                    alt=""> Redmi
+                                数字系列</a> </li>
+                    </ul>
+                </li>
+                <li class="grow w-full pl-[30px] flex items-center group">
+                    家电
+                    <span class="iconfont-arrow-right-big text-[16px] grow pr-[20px] text-right "></span>
+                    <ul
+                        class=" absolute h-full left-full top-[0px] bg-white text-black grid grid-flow-col grid-rows-[repeat(6,1fr)] shadow-xl hidden group-hover:grid">
+                        <li class="w-[265px] h-[76px] flex m-auto"><a
+                                href="https://www.mi.com/shop/search?keyword=xiaomi%E6%95%B0%E5%AD%97%E7%B3%BB%E5%88%97"
+                                class="w-full h-full px-[20px] py-[18px] flex items-center"> <img
+                                    class="w-[40px] h-[40px] mr-[12px]"
+                                    src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/182d59037498cad87202c36e1a8ea23c.png?thumb=1&w=60&h=60&f=webp&q=90"
+                                    alt=""> 壁挂空调</a></li>
+                        <li class="w-[265px] h-[76px] flex m-auto"><a
+                                href="https://www.mi.com/shop/search?keyword=xiaomi%E6%95%B0%E5%AD%97%E7%B3%BB%E5%88%97"
+                                class="w-full h-full px-[20px] py-[18px] flex items-center"> <img
+                                    class="w-[40px] h-[40px] mr-[12px]"
+                                    src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/182d59037498cad87202c36e1a8ea23c.png?thumb=1&w=60&h=60&f=webp&q=90"
+                                    alt=""> 立式空调</a> </li>
+                        <li class="w-[265px] h-[76px] flex m-auto"><a
+                                href="https://www.mi.com/shop/search?keyword=xiaomi%E6%95%B0%E5%AD%97%E7%B3%BB%E5%88%97"
+                                class="w-full h-full px-[20px] py-[18px] flex items-center"> <img
+                                    class="w-[40px] h-[40px] mr-[12px]"
+                                    src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/182d59037498cad87202c36e1a8ea23c.png?thumb=1&w=60&h=60&f=webp&q=90"
+                                    alt=""> 中央空调Pro</a> </li>
+                        <li class="w-[265px] h-[76px] flex m-auto"><a
+                                href="https://www.mi.com/shop/search?keyword=xiaomi%E6%95%B0%E5%AD%97%E7%B3%BB%E5%88%97"
+                                class="w-full h-full px-[20px] py-[18px] flex items-center"> <img
+                                    class="w-[40px] h-[40px] mr-[12px]"
+                                    src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/182d59037498cad87202c36e1a8ea23c.png?thumb=1&w=60&h=60&f=webp&q=90"
+                                    alt=""> 冰箱</a> </li>
+                        <li class="w-[265px] h-[76px] flex m-auto"><a
+                                href="https://www.mi.com/shop/search?keyword=xiaomi%E6%95%B0%E5%AD%97%E7%B3%BB%E5%88%97"
+                                class="w-full h-full px-[20px] py-[18px] flex items-center"> <img
+                                    class="w-[40px] h-[40px] mr-[12px]"
+                                    src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/182d59037498cad87202c36e1a8ea23c.png?thumb=1&w=60&h=60&f=webp&q=90"
+                                    alt=""> 滚筒洗衣机</a> </li>
+                        <li class="w-[265px] h-[76px] flex m-auto"><a
+                                href="https://www.mi.com/shop/search?keyword=xiaomi%E6%95%B0%E5%AD%97%E7%B3%BB%E5%88%97"
+                                class="w-full h-full px-[20px] py-[18px] flex items-center"> <img
+                                    class="w-[40px] h-[40px] mr-[12px]"
+                                    src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/182d59037498cad87202c36e1a8ea23c.png?thumb=1&w=60&h=60&f=webp&q=90"
+                                    alt=""> 波轮洗衣机</a> </li>
+                        <li class="w-[265px] h-[76px] flex m-auto"><a
+                                href="https://www.mi.com/shop/search?keyword=xiaomi%E6%95%B0%E5%AD%97%E7%B3%BB%E5%88%97"
+                                class="w-full h-full px-[20px] py-[18px] flex items-center"> <img
+                                    class="w-[40px] h-[40px] mr-[12px]"
+                                    src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/182d59037498cad87202c36e1a8ea23c.png?thumb=1&w=60&h=60&f=webp&q=90"
+                                    alt=""> 电暖器</a> </li>
+                        <li class="w-[265px] h-[76px] flex m-auto"><a
+                                href="https://www.mi.com/shop/search?keyword=xiaomi%E6%95%B0%E5%AD%97%E7%B3%BB%E5%88%97"
+                                class="w-full h-full px-[20px] py-[18px] flex items-center"> <img
+                                    class="w-[40px] h-[40px] mr-[12px]"
+                                    src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/182d59037498cad87202c36e1a8ea23c.png?thumb=1&w=60&h=60&f=webp&q=90"
+                                    alt=""> 除湿机 </a> </li>
+                        <li class="w-[265px] h-[76px] flex m-auto"><a
+                                href="https://www.mi.com/shop/search?keyword=xiaomi%E6%95%B0%E5%AD%97%E7%B3%BB%E5%88%97"
+                                class="w-full h-full px-[20px] py-[18px] flex items-center"> <img
+                                    class="w-[40px] h-[40px] mr-[12px]"
+                                    src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/182d59037498cad87202c36e1a8ea23c.png?thumb=1&w=60&h=60&f=webp&q=90"
+                                    alt=""> 除湿机 </a> </li>
+                        <li class="w-[265px] h-[76px] flex m-auto"><a
+                                href="https://www.mi.com/shop/search?keyword=xiaomi%E6%95%B0%E5%AD%97%E7%B3%BB%E5%88%97"
+                                class="w-full h-full px-[20px] py-[18px] flex items-center"> <img
+                                    class="w-[40px] h-[40px] mr-[12px]"
+                                    src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/182d59037498cad87202c36e1a8ea23c.png?thumb=1&w=60&h=60&f=webp&q=90"
+                                    alt=""> 除湿机 </a> </li>
+                        <li class="w-[265px] h-[76px] flex m-auto"><a
+                                href="https://www.mi.com/shop/search?keyword=xiaomi%E6%95%B0%E5%AD%97%E7%B3%BB%E5%88%97"
+                                class="w-full h-full px-[20px] py-[18px] flex items-center"> <img
+                                    class="w-[40px] h-[40px] mr-[12px]"
+                                    src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/182d59037498cad87202c36e1a8ea23c.png?thumb=1&w=60&h=60&f=webp&q=90"
+                                    alt=""> 除湿机 </a> </li>
+                        <li class="w-[265px] h-[76px] flex m-auto"><a
+                                href="https://www.mi.com/shop/search?keyword=xiaomi%E6%95%B0%E5%AD%97%E7%B3%BB%E5%88%97"
+                                class="w-full h-full px-[20px] py-[18px] flex items-center"> <img
+                                    class="w-[40px] h-[40px] mr-[12px]"
+                                    src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/182d59037498cad87202c36e1a8ea23c.png?thumb=1&w=60&h=60&f=webp&q=90"
+                                    alt=""> 除湿机 </a> </li>
+                        <li class="w-[265px] h-[76px] flex m-auto"><a
+                                href="https://www.mi.com/shop/search?keyword=xiaomi%E6%95%B0%E5%AD%97%E7%B3%BB%E5%88%97"
+                                class="w-full h-full px-[20px] py-[18px] flex items-center"> <img
+                                    class="w-[40px] h-[40px] mr-[12px]"
+                                    src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/182d59037498cad87202c36e1a8ea23c.png?thumb=1&w=60&h=60&f=webp&q=90"
+                                    alt=""> 除湿机 </a> </li>
+                        <li class="w-[265px] h-[76px] flex m-auto"><a
+                                href="https://www.mi.com/shop/search?keyword=xiaomi%E6%95%B0%E5%AD%97%E7%B3%BB%E5%88%97"
+                                class="w-full h-full px-[20px] py-[18px] flex items-center"> <img
+                                    class="w-[40px] h-[40px] mr-[12px]"
+                                    src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/182d59037498cad87202c36e1a8ea23c.png?thumb=1&w=60&h=60&f=webp&q=90"
+                                    alt=""> 除湿机 </a> </li>
+                        <li class="w-[265px] h-[76px] flex m-auto"><a
+                                href="https://www.mi.com/shop/search?keyword=xiaomi%E6%95%B0%E5%AD%97%E7%B3%BB%E5%88%97"
+                                class="w-full h-full px-[20px] py-[18px] flex items-center"> <img
+                                    class="w-[40px] h-[40px] mr-[12px]"
+                                    src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/182d59037498cad87202c36e1a8ea23c.png?thumb=1&w=60&h=60&f=webp&q=90"
+                                    alt=""> 除湿机 </a> </li>
+                        <li class="w-[265px] h-[76px] flex m-auto"><a
+                                href="https://www.mi.com/shop/search?keyword=xiaomi%E6%95%B0%E5%AD%97%E7%B3%BB%E5%88%97"
+                                class="w-full h-full px-[20px] py-[18px] flex items-center"> <img
+                                    class="w-[40px] h-[40px] mr-[12px]"
+                                    src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/182d59037498cad87202c36e1a8ea23c.png?thumb=1&w=60&h=60&f=webp&q=90"
+                                    alt=""> 除湿机 </a> </li>
+                        <li class="w-[265px] h-[76px] flex m-auto"><a
+                                href="https://www.mi.com/shop/search?keyword=xiaomi%E6%95%B0%E5%AD%97%E7%B3%BB%E5%88%97"
+                                class="w-full h-full px-[20px] py-[18px] flex items-center"> <img
+                                    class="w-[40px] h-[40px] mr-[12px]"
+                                    src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/182d59037498cad87202c36e1a8ea23c.png?thumb=1&w=60&h=60&f=webp&q=90"
+                                    alt=""> 除湿机 </a> </li>
+                        <li class="w-[265px] h-[76px] flex m-auto"><a
+                                href="https://www.mi.com/shop/search?keyword=xiaomi%E6%95%B0%E5%AD%97%E7%B3%BB%E5%88%97"
+                                class="w-full h-full px-[20px] py-[18px] flex items-center"> <img
+                                    class="w-[40px] h-[40px] mr-[12px]"
+                                    src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/182d59037498cad87202c36e1a8ea23c.png?thumb=1&w=60&h=60&f=webp&q=90"
+                                    alt=""> 除湿机 </a> </li>
+                        <li class="w-[265px] h-[76px] flex m-auto"><a
+                                href="https://www.mi.com/shop/search?keyword=xiaomi%E6%95%B0%E5%AD%97%E7%B3%BB%E5%88%97"
+                                class="w-full h-full px-[20px] py-[18px] flex items-center"> <img
+                                    class="w-[40px] h-[40px] mr-[12px]"
+                                    src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/182d59037498cad87202c36e1a8ea23c.png?thumb=1&w=60&h=60&f=webp&q=90"
+                                    alt=""> 除湿机 </a> </li>
+                        <li class="w-[265px] h-[76px] flex m-auto"><a
+                                href="https://www.mi.com/shop/search?keyword=xiaomi%E6%95%B0%E5%AD%97%E7%B3%BB%E5%88%97"
+                                class="w-full h-full px-[20px] py-[18px] flex items-center"> <img
+                                    class="w-[40px] h-[40px] mr-[12px]"
+                                    src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/182d59037498cad87202c36e1a8ea23c.png?thumb=1&w=60&h=60&f=webp&q=90"
+                                    alt=""> 除湿机 </a> </li>
+                        <li class="w-[265px] h-[76px] flex m-auto"><a
+                                href="https://www.mi.com/shop/search?keyword=xiaomi%E6%95%B0%E5%AD%97%E7%B3%BB%E5%88%97"
+                                class="w-full h-full px-[20px] py-[18px] flex items-center"> <img
+                                    class="w-[40px] h-[40px] mr-[12px]"
+                                    src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/182d59037498cad87202c36e1a8ea23c.png?thumb=1&w=60&h=60&f=webp&q=90"
+                                    alt=""> 除湿机 </a> </li>
+                        <li class="w-[265px] h-[76px] flex m-auto"><a
+                                href="https://www.mi.com/shop/search?keyword=xiaomi%E6%95%B0%E5%AD%97%E7%B3%BB%E5%88%97"
+                                class="w-full h-full px-[20px] py-[18px] flex items-center"> <img
+                                    class="w-[40px] h-[40px] mr-[12px]"
+                                    src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/182d59037498cad87202c36e1a8ea23c.png?thumb=1&w=60&h=60&f=webp&q=90"
+                                    alt=""> 除湿机 </a> </li>
+                        <li class="w-[265px] h-[76px] flex m-auto"><a
+                                href="https://www.mi.com/shop/search?keyword=xiaomi%E6%95%B0%E5%AD%97%E7%B3%BB%E5%88%97"
+                                class="w-full h-full px-[20px] py-[18px] flex items-center"> <img
+                                    class="w-[40px] h-[40px] mr-[12px]"
+                                    src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/182d59037498cad87202c36e1a8ea23c.png?thumb=1&w=60&h=60&f=webp&q=90"
+                                    alt=""> 除湿机 </a> </li>
+                        <li class="w-[265px] h-[76px] flex m-auto"><a
+                                href="https://www.mi.com/shop/search?keyword=xiaomi%E6%95%B0%E5%AD%97%E7%B3%BB%E5%88%97"
+                                class="w-full h-full px-[20px] py-[18px] flex items-center"> <img
+                                    class="w-[40px] h-[40px] mr-[12px]"
+                                    src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/182d59037498cad87202c36e1a8ea23c.png?thumb=1&w=60&h=60&f=webp&q=90"
+                                    alt=""> 除湿机 </a> </li>
+
+                    </ul>
+                </li>
+                <li class="grow w-full pl-[30px] flex items-center">
+                    笔记本 平板
+                    显示器
+                    <span class="iconfont-arrow-right-big text-[16px] grow pr-[20px] text-right "></span>
+                </li>
+                <li class="grow w-full pl-[30px] flex items-center">
+                    出行 穿戴
+                    <span class="iconfont-arrow-right-big text-[16px] grow pr-[20px] text-right "></span>
+                </li>
+                <li class="grow w-full pl-[30px] flex items-center">
+                    耳机 音响
+                    <span class="iconfont-arrow-right-big text-[16px] grow pr-[20px] text-right "></span>
+                </li>
+                <li class="grow w-full pl-[30px] flex items-center">
+                    健康 儿童
+                    <span class="iconfont-arrow-right-big text-[16px] grow pr-[20px] text-right "></span>
+                </li>
+                <li class="grow w-full pl-[30px] flex items-center">
+                    生活 箱包
+                    <span class="iconfont-arrow-right-big text-[16px] grow pr-[20px] text-right "></span>
+                </li>
+                <li class="grow w-full pl-[30px] flex items-center">
+                    智能 路由器
+                    <span class="iconfont-arrow-right-big text-[16px] grow pr-[20px] text-right "></span>
+                </li>
+                <li class="grow w-full pl-[30px] flex items-center">
+                    电源 配件
+                    <span class="iconfont-arrow-right-big text-[16px] grow pr-[20px] text-right "></span>
+                </li>
+            </ul>
+        </div>
+
+        <div class="absolute right-0 top-0 group">
+            <label
+                class="group absolute flex w-[15px] h-[15px] right-[calc(4*var(--unit))] bottom-[calc(1*var(--unit))] z-1000 cursor-pointer">
+                <input type="radio" name="slider" id="slider01" class="w-[15px] h-[15px]" checked>
+            </label>
+            <div
+                class="relative left-full  group-has-[input:checked]:left-0 transition-[left] duration-600 animate-[leaving_.6s] group-has-[input:checked]:animate-none">
+                <a href="https://www.mi.com/a/h/59341.html?sign=b033eeb507cc21b47f31611684ff1b1a" target="_blank"
+                    class="">
+                    <img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/a644c0be9094f589307e60fdb8f271f6.jpg?w=2452&h=920"
+                        alt="">
+                </a>
+            </div>
+        </div>
+
+        <div class="absolute right-0 top-0 group">
+            <label
+                class="group absolute flex w-[15px] h-[15px] right-[calc(3*var(--unit))] bottom-[calc(1*var(--unit))] z-1000 cursor-pointer">
+                <input type="radio" name="slider" id="slider02" class="w-[15px] h-[15px]">
+            </label>
+            <div
+                class="relative left-full  group-has-[input:checked]:left-0 transition-[left] duration-600 animate-[leaving_.6s] group-has-[input:checked]:animate-none">
+                <a href="https://www.mi.com/a/h/59483.html?sign=5acae9bc7b6ae65713dd4bf05f089c9d" target="_blank"
+                    class="">
+                    <img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/1842c833236b61ef5b94cd4b872953bd.png?w=2452&h=920"
+                        alt="">
+                </a>
+            </div>
+        </div>
+
+        <div class="absolute right-0 top-0 group">
+            <label
+                class="group absolute flex w-[15px] h-[15px] right-[calc(2*var(--unit))] bottom-[calc(1*var(--unit))] z-1000 cursor-pointer">
+                <input type="radio" name="slider" id="slider03" class="w-[15px] h-[15px]">
+            </label>
+            <div
+                class="relative left-full  group-has-[input:checked]:left-0 transition-[left] duration-600 animate-[leaving_.6s] group-has-[input:checked]:animate-none">
+                <a href="https://www.mi.com/a/h/60339.html?sign=9cc0205dcbd9576399d446f0a0e10ff7" target="_blank">
+                    <img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/d7d399b295ae3fda1b705d06c15e983c.png?thumb=1&w=1839&h=690&f=webp&q=90"
+                        alt="">
+                </a>
+            </div>
+        </div>
+
+
+
+
+        <div class="group absolute right-0 top-0">
+            <label
+                class="absolute flex w-[15px] h-[15px] right-[calc(1*var(--unit))] bottom-[calc(1*var(--unit))] z-1000 cursor-pointer">
+                <input type="radio" name="slider" id="slider04" class=" w-[15px] h-[15px] ">
+            </label>
+            <div
+                class="relative left-full  group-has-[input:checked]:left-0 transition-[left] duration-600 animate-[leaving_.6s] group-has-[input:checked]:animate-none">
+                <a href="https://www.mi.com/a/h/60482.html?sign=fc8b657f5882689438b83a9908338eb9" target="_blank">
+                    <img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/90132823ea953f2387d0f92f369430ea.jpg?thumb=1&w=1839&h=690&f=webp&q=90"
+                        alt="">
+                </a>
+            </div>
+        </div>
+
+
+    </div>
+
+
+
+
+
+</body>
+
+</html>
