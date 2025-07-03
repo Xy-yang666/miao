@@ -161,3 +161,268 @@
     var det3 = a * f - c * d
     console.log("x=" + det2 / det1, "y=" + det3 / det1)
 </script>
+
+
+
+
+
+
+
+<script id="ch0104/01" type="xtext/javascript">
+    var N = +prompt("输入一个整数N:", "")
+    if (N > 0) {
+        console.log("positive")
+    } else if (N == 0) {
+        console.log("zero")
+    } else {
+        console.log("negative")
+    }
+</script>
+
+<script id="ch0104/02" type="xtext/javascript">
+    var float = +prompt("输入一个浮点数:", "")
+    if (float >= 0) {
+        console.log(float.toFixed(2))
+    } else {
+        console.log((-float).toFixed(2))
+    }
+</script>
+
+<script id="ch0104/03" type="xtext/javascript">
+    var N = +prompt("输入一个整数N:", "")
+    if (N % 2 == 0) {
+        console.log("even")
+    } else {
+        console.log("odd")
+    }
+</script>
+
+<script id="ch0104/04" type="xtext/javascript">
+    var string = prompt("输入一个字符:", "")
+    if (string.charCodeAt(0) % 2 == 0) {
+        console.log("NO")
+    } else {
+        console.log("YES")
+    }
+</script>
+
+<script id="ch0104/05" type="xtext/javascript">
+    var x = Number(prompt("输入第一个数:", ""))
+    var y = Number(prompt("输入第二个数:", ""))
+    if (x > y) {
+        console.log(">")
+    } else if (x == y) {
+        console.log("=")
+    } else {
+        console.log("<")
+    }
+</script>
+
+<script id="ch0104/06" type="xtext/javascript">
+    var x = Number(prompt("输入一个正整数:"))
+    if (x >= 10 && x <= 99) {
+        console.log("1")
+    } else {
+        console.log("0")
+    }
+</script>
+
+<script id="ch0104/07" type="xtext/javascript">
+    var x = Number(prompt("印有“幸运”的瓶盖数:"))
+    var y = Number(prompt("印有“鼓励”的瓶盖数:"))
+    if (x >= 10 || y >= 20) {
+        console.log("1")
+    } else {
+        console.log("0")
+    }
+</script>
+
+<script id="ch0104/08" type="xtext/javascript">
+    var n = Number(prompt("输入一个正整数:"))
+    if (n % 3 == 0 && n % 5 == 0) {
+        console.log("YES")
+    } else {
+        console.log("NO")
+    }
+</script>
+
+<script id="ch0104/09" type="xtext/javascript">
+    var n = Number(prompt("输入一个正整数:"))
+    if (n % 3 == 0 && n % 5 == 0 && n % 7 == 0) {
+        console.log("3" + " " + "5" + " " + "7")
+    } else if (n % 3 == 0 && n % 5 == 0) {
+        console.log("3 " + "5")
+    } else if (n % 3 == 0 && n % 7 == 0) {
+        console.log("3 " + "7")
+    } else if (n % 5 == 0 && n % 7 == 0) {
+        console.log("5 " + "7")
+    } else if (n % 3 == 0) {
+        console.log("3")
+    } else if (n % 5 == 0) {
+        console.log("5")
+    } else if (n % 7 == 0) {
+        console.log("7")
+    } else {
+        console.log("n")
+    }
+</script>
+
+<script id="ch0104/10" type="xtext/javascript">
+    var x = Number(prompt("语文:"))
+    var y = Number(prompt("数学:"))
+    if (x < 60 || y < 60) {
+        console.log("1")
+    } else {
+        console.log("0")
+    }
+</script>
+
+<script id="ch0104/11" type="Xtext/javascript">
+    var x = Number(prompt("日期:"))
+    if (x == 1 || x == 3 || x == 5) {
+        console.log("NO")
+    } else {
+        console.log("YES")
+    }
+</script>
+
+<script id="ch0104/12" type="xtext/javascript">
+    var x = Number(prompt("距离:"))
+    var t1 = 27 + 23 + x / 3
+    var t2 = x / 1.2
+    if (t1 < t2) {
+        console.log("Bike")
+    } else if (t1 > t2) {
+        console.log("Walk")
+    } else {
+        console.log("All")
+    }
+</script>
+
+<script id="ch0104/13" type="xtext/javascript">
+    var x = Number(prompt("一个浮点数x,0 <= x < 20:"))
+    if (0 <= x && x < 5) {
+        console.log((-x + 2.5).toFixed(3))
+    } else if (5 <= x && x < 10) {
+        console.log((2 - 1.5 * (x - 3) * (x - 3)).toFixed(3))
+    } else if (10 <= x && x < 20) {
+        console.log((x / 2 - 1.5).toFixed(3))
+    }
+</script>
+
+
+<script id="ch0104/14" type="xtext/javascript">
+    var x = Number(prompt("重量:"))
+    var char = prompt("是否加急(y/n):")
+    var fee = 8
+    if (0 <= x && x <= 1000) {
+        if (char == "y") {
+            fee = fee + 5
+        } else if (char == "n") {
+            fee = fee
+        }
+    } else if (x > 1000) {
+        fee = fee + Math.ceil((x - 1000) / 500) * 4
+        if (char == "y") {
+            fee = fee + 5
+        } else if (char == "n") {
+            fee = fee
+        }
+    }
+    console.log(fee)
+
+</script>
+
+
+<script id="ch0104/15" type="xtext/javascript">
+    var a = Number(prompt("a:"))
+    var b = Number(prompt("b:"))
+    var c = Number(prompt("c:"))
+    var tempt = 0
+    if (a >= b) {
+        tempt = a
+    } else {
+        tempt = b
+    }
+    if (tempt >= c) {
+        tempt = tempt
+    } else {
+        tempt = c
+    }
+    console.log(tempt)
+
+</script>
+
+<script id="ch0104/16" type="xtext/javascript">
+    var a = Number(prompt("a:"))
+    var b = Number(prompt("b:"))
+    var c = Number(prompt("c:"))
+    if (a + b > c && a + c > b && b + c > a) {
+        console.log("yes")
+    } else {
+        console.log("no")
+    }
+</script>
+
+<script id="ch0104/17" type="xtext/javascript">
+    var n = Number(prompt("输入一个年份:"))
+    if (n % 400 == 0 || n % 4 == 0 && n % 100 != 0) {
+        console.log("Y")
+    } else {
+        console.log("N")
+    }
+</script>
+
+<script id="ch0104/18" type="xtext/javascript">
+    var x = Number(prompt("x:"))
+    var y = Number(prompt("y:"))
+    if (-1 <= x && x <= 1 && -1 <= y && y <= 1) {
+        console.log("yes")
+    } else {
+        console.log("no")
+    }
+</script>
+
+<script id="ch0104/19" type="text/xjavascript">
+    var x = Number(prompt("x:"))
+    var y = Number(prompt("y:"))
+    var operator = prompt("operator:")
+    if (operator == "+" || operator == "-" || operator == "*" || operator == "/") {
+        if (y == 0 && operator == "/") {
+            console.log("Divided by zero!")
+        } else if (operator == "+") {
+            console.log(x + y)
+        } else if (operator == "-") {
+            console.log(x - y)
+        } else if (operator == "*") {
+            console.log(x * y)
+        } else if (operator == "/") {
+            console.log(x / y)
+        }
+
+    } else {
+        console.log("Invalid operator!")
+    }
+</script>
+
+<script id="ch0104/20" type="xtext/javascript">
+    var a = Number(prompt("a:"))
+    var b = Number(prompt("b:"))
+    var c = Number(prompt("c:"))
+    var delta = b ** 2 - 4 * a * c
+    if (delta == 0) {
+        console.log("x1 = x2 = " + (-b / 2 * a).toFixed(5))
+    } else if (delta > 0) {
+        console.log("x1 = " + ((-b + Math.sqrt(delta)) / 2 * a).toFixed(5) + "; " + "x2 = " + ((-b - Math.sqrt(delta)) / 2 * a).toFixed(5))
+    } else if (delta < 0) {
+        console.log("x1 = " + (-b / (2 * a)).toFixed(5) + "+" + ((Math.sqrt(-delta)) / (2 * a)).toFixed(5) + "i" + "; " + "x2 = " + (-b / (2 * a)).toFixed(5) + "-" + ((Math.sqrt(-delta)) / (2 * a)).toFixed(5) + "i")
+    }
+</script>
+
+<script id="ch0104/21" type="text/javascript">
+    var n = Number(prompt("n:"))
+    var x = Number(prompt("x:"))
+    var y = Number(prompt("y:"))
+    console.log(n - Math.ceil(y / x))
+
+</script>
