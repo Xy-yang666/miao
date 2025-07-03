@@ -1,0 +1,163 @@
+<script id="ch0103/01" type="xtext/javascript">
+    var A = +prompt("Please input A:")
+    var B = +prompt("Please input B:")
+    var result = A + B
+    console.log(result)
+</script>
+
+<script id="ch0103/02" type="xtext/javascript">
+    var a = +prompt("Please input a:")
+    var b = +prompt("Please input b:")
+    var c = +prompt("Please input c:")
+    var result = (a + b) * c
+    console.log(result)
+</script>
+
+<script id="ch0103/03" type="xtext/javascript">
+    var a = +prompt("Please input a:")
+    var b = +prompt("Please input b:")
+    var c = +prompt("Please input c:")
+    var sum = a + b
+    var result = (sum - sum % c) / c
+    console.log(result)
+</script>
+
+<script id="ch0103/04" type="xtext/javascript">
+    var a = +prompt("被除数:")
+    var b = +prompt("除数:")
+    console.log((a - a % b) / b, a % b)
+</script>
+
+<script id="ch0103/05" type="xtext/javascript">
+    var a = +prompt("整数a:")
+    var b = +prompt("整数b:")
+    console.log((a / b).toFixed(9))
+</script>
+
+<script id="ch0103/06" type="xtext/javascript">
+    var a = +prompt("确诊数:")
+    var b = +prompt("死亡数:")
+    console.log((100 * b / a).toFixed(3) + "%")
+</script>
+
+<script id="ch0103/07" type="xtext/javascript">
+    var x = +prompt("x:")
+    var a = +prompt("参数a:")
+    var b = +prompt("参数b:")
+    var c = +prompt("参数c:")
+    var d = +prompt("参数d:")
+    var result = a * x ** 3 + b * x ** 2 + c * x + d
+    console.log(result.toFixed(7))
+</script>
+
+<script id="ch0103/08" type="xtext/javascript">
+    var f = +prompt("华氏温度f:")
+    var C = 5 * (f - 32) / 9
+    console.log(C.toFixed(5))
+</script>
+
+<script id="ch0103/09" type="xtext/javascript">
+    var r = +prompt("圆的半径r:")
+    var d = 2 * r
+    var C = 2 * Math.PI * r
+    var S = Math.PI * r ** 2
+    console.log(d.toFixed(4), C.toFixed(4), S.toFixed(4))
+</script>
+
+<script id="ch0103/10" type="xtext/javascript">
+    var r1 = +prompt("电阻r1:")
+    var r2 = +prompt("电阻r2:")
+    var R = 1 / (1 / r1 + 1 / r2)
+    console.log(R.toFixed(2))
+</script>
+
+<script id="ch0103/11" type="xtext/javascript">
+    var a = +prompt("a:")
+    var b = +prompt("b:")
+    var r = a % b
+    console.log(r.toFixed(4))
+</script>
+
+<script id="ch0103/12" type="xtext/javascript">
+    var r = +prompt("球的半径为r:")
+    var V = 4 / 3 * 3.14 * r ** 3
+    console.log(V.toFixed(2))
+</script>
+
+<script id="ch0103/13" type="xtext/javascript">
+    var n = +prompt("三位数n:")
+    var a = n % 10 + ""
+    var b = (n - a) % 100 / 10 + ""
+    var c = (n - a - b * 10) % 1000 / 100 + ""
+    console.log(a + b + c)
+</script>
+
+<script id="ch0103/14" type="xtext/javascript">
+    var h = +prompt("小圆桶的深h (cm):")
+    var r = +prompt("底面半径r (cm):")
+    var V = Math.PI * r ** 2 * h / 1e3
+    console.log(20 % V == 0 ? 20 / V : (20 - 20 % V) / V + 1)
+</script>
+
+<script id="ch0103/15" type="xtext/javascript">
+    var n = +prompt("一箱n个苹果:")
+    var x = +prompt("虫子每x小时能吃掉一个苹果:")
+    var y = +prompt("y小时后:")
+    console.log(n - (y % x == 0 ? y / x : (y - y % x) / x + 1))
+</script>
+
+<script id="ch0103/16" type="xtext/javascript">
+    var Xa = +prompt("坐标A Xa:")
+    var Ya = +prompt("坐标A Ya:")
+    var Xb = +prompt("坐标B Xb:")
+    var Yb = +prompt("坐标B Yb:")
+    console.log(Math.sqrt((Xa - Xb) ** 2 + (Ya - Yb) ** 2).toFixed(3))
+</script>
+
+<script id="ch0103/17" type="xtext/javascript">
+    var X1 = +prompt("顶点A坐标 X1:")
+    var Y1 = +prompt("顶点A坐标 Y1:")
+    var X2 = +prompt("顶点B坐标 X2:")
+    var Y2 = +prompt("顶点B坐标 Y2:")
+    var X3 = +prompt("顶点C坐标 X3:")
+    var Y3 = +prompt("顶点C坐标 Y3:")
+    var a = Math.sqrt((X1 - X2) ** 2 + (Y1 - Y2) ** 2)
+    var b = Math.sqrt((X1 - X3) ** 2 + (Y1 - Y3) ** 2)
+    var c = Math.sqrt((X2 - X3) ** 2 + (Y2 - Y3) ** 2)
+    var s = (a + b + c) / 2
+    console.log(Math.sqrt(s * (s - a) * (s - b) * (s - c)).toFixed(2))
+</script>
+
+<script id="ch0103/18" type="xtext/javascript">
+    var a1 = +prompt("等差数列的第一项 a1:")
+    var a2 = +prompt("等差数列的第二项 a2:")
+    var n = +prompt("第n项 n:")
+    var d = a2 - a1
+    console.log(a1 + (n - 1) * d)
+</script>
+
+<script id="ch0103/19" type="xtext/javascript">
+    var A = +prompt("Please input A:")
+    var B = +prompt("Please input B:")
+    var result = A * B
+    console.log(result)
+</script>
+
+<script id="ch0103/20" type="xtext/javascript">
+    var n = +prompt("整数n:")
+    var result = 2 ** n
+    console.log(result)
+</script>
+
+<script id="Linear Equation" type="javascript">
+    var a = +prompt("a:")
+    var b = +prompt("b:")
+    var c = +prompt("c:")
+    var d = +prompt("d:")
+    var e = +prompt("e:")
+    var f = +prompt("f:")
+    var det1 = a * e - b * d
+    var det2 = c * e - b * f
+    var det3 = a * f - c * d
+    console.log("x=" + det2 / det1, "y=" + det3 / det1)
+</script>
