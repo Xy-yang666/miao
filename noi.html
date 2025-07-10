@@ -708,8 +708,8 @@
         }
 
     }
-    console.log(totalDistance)
-    console.log(BouncingHeight)
+    console.log(totalDistance.toFixed(4))
+    console.log(BouncingHeight.toFixed(7))
 </script>
 
 
@@ -772,7 +772,7 @@
         var q = +prompt("舒张压:", "")
         if (90 <= p && p <= 140 && 60 <= q && q <= 90) {
             counter++
-            if (counter > a) {
+            if (counter > 0) {
                 maxcounter = counter
             }
         } else {
@@ -860,7 +860,11 @@
     while (K != 0) {
         var digit = K % 10
         K = (K - (K % 10)) / 10
-        char = char + " " + digit
+        if (char == "") {
+            char += digit
+        } else {
+            char += " " + digit
+        }
     }
     console.log(char)
 </script>
