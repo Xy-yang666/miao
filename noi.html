@@ -1203,7 +1203,7 @@
 
 
 
-<script id="ch0105/45" type="text/javascript">
+<script id="ch0105/45" type="xtext/javascript">
     var n = +prompt("第n天", "")
     var sum = 0
     for (var i = 1; i <= n; i++) {
@@ -1218,5 +1218,153 @@
                 return i
             }
         }
+    }
+</script>
+
+<!--
+narcissistic: 输入一个数，判断是否是水仙花数
+narcissistics: 输出10000以内的水仙花数
+palindrom: 输入一个数，判断它数是否是回文数，如1223221
+weekday: 输入年份与月份，输出这个月的第一天是周几（视具体设定，周一可以用1或0表示）
+complete-number: 输入一个数，判断它是否是完全数（自行查相关概念）
+complete-numbers: 输出1000以内的完全数
+prime: 输入一个数，判断它是否是素数
+primes: 输出100以内的素数
+itob: 给定一个整数，将其转换为字符串：不能使用String等现成函数，但可以使用非此功能的其它函数，也不能利用任意运算符的自动类型转换
+lcf&lcm: 输入两个数，输出它们的最大公约数和最小公倍数
+sqrt: 输入一个数，求它的平方根，精确到小数点后3位，不能使用Math.sqrt
+ -->
+
+
+<script id="complete-number" type="xtext/javascript">
+    var n = +prompt("输入一个数", "")
+    var sum = 1
+    for (var i = 2; i <= Math.sqrt(n); i++) {
+        if (n % i == 0) {
+            sum += i + n / i
+        }
+        if (i == Math.sqrt(n)) {
+            sum -= i
+        }
+    }
+    console.log(sum == n ? "YES" : "NO")
+</script>
+
+
+<script id="complete-numbers" type="xtext/javascript">
+    function isCompleteNumber(x) {
+        var sum = 1
+        for (var i = 2; i <= Math.sqrt(x); i++) {
+            if (x % i == 0) {
+                sum += i + x / i
+            }
+            if (i == Math.sqrt(x)) {
+                sum -= i
+            }
+        }
+        return sum == x
+    }
+
+    var char = ""
+    for (var i = 2; i <= 1000; i++) {
+        if (isCompleteNumber(i)) {
+            char += i + " "
+        }
+    }
+    console.log(char)
+</script>
+
+<script id="palindrom" type="xtext/javascript">
+    function isPalindrom(x) {
+        var char = ""
+        var k = x
+        while (x > 0) {
+            var digit = x % 10
+            x = (x - digit) / 10
+            char += digit
+        }
+        return char == k
+    }
+
+    var n = +prompt("输入一个数", "")
+    console.log(isPalindrom(n) ? "YES" : "NO")
+</script>
+
+<script id="narcissistic" type="xtext/javascript">
+    function howManyDigits(x) {
+        for (var i = 0; x > 0; i++) {
+            var digit = x % 10
+            x = (x - digit) / 10
+        }
+        return i
+    }
+
+    function isNarcissistic(x) {
+        var sum = 0
+        var origin = x
+        while (x > 0) {
+            var digit = x % 10
+            sum += digit ** howManyDigits(origin)
+            x = (x - digit) / 10
+        }
+        return sum == origin
+    }
+
+    var n = +prompt("输入一个数", "")
+    console.log(isNarcissistic(n) ? "YES" : "NO")
+</script>
+
+<script id="narcissistics" type="xtext/javascript">
+    function howManyDigits(x) {
+        for (var i = 0; x > 0; i++) {
+            var digit = x % 10
+            x = (x - digit) / 10
+        }
+        return i
+    }
+
+    function isNarcissistic(x) {
+        var sum = 0
+        var origin = x
+        while (x > 0) {
+            var digit = x % 10
+            sum += digit ** howManyDigits(origin)
+            x = (x - digit) / 10
+        }
+        return sum == origin
+    }
+
+    var char = ""
+    for (var i = 1; i <= 10000; i++) {
+        if (isNarcissistic(i)) {
+            char += i + " "
+        }
+    }
+    console.log(char)
+</script>
+
+<script>
+    var countPrimes = function (n) {
+        function isPrime(x) {
+            if (x == 0 || x == 1) {
+                return false
+            }
+
+            for (var i = 2; i <= Math.sqrt(x); i++) {
+                if (x % i == 0) {
+                    return false
+                }
+            }
+            return true
+        }
+
+        let count = 0
+        for (let i = 1; i < n; i++) {
+            if (isPrime(i)) {
+                count++
+            }
+        }
+
+        return count
     }
 </script>
