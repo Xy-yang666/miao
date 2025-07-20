@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>画图</title>
+  <style>
+    canvas {
+      border: 2px solid #f0f;
+      display: block;
+      margin: auto;
+    }
+  </style>
+</head>
+
+<body>
+  <canvas width="1000" height="1000"></canvas>
+</body>
+<script>
+  var canvas = document.querySelector('canvas')
+  canvas.style.imageRendering = 'pixelated' //放大时的插帧方式：不插帧，直接放大像素
+  var ctx = canvas.getContext('2d')
+
+  function dot(x, y, color = 'black') {
+    x = Math.round(x)
+    y = Math.round(y)
+    ctx.fillStyle = color
+    ctx.fillRect(x, y, 1, 1)
+  }
+  /**
+   * 你的任务：通过调用dot函数，实现：
+   * 需要注意，dot函数不能接收浮点数，如果参数为浮点数，会被转换为整数后绘制
+      * 在 坐标 (42, 42) 画出一个点
+      * 画一条水平实线，粗细为一个像素
+      * 画一条垂直实线，粗细为一个像素
+      * 画一条一个实点一个空点的虚线
+      * 画一条两个实点两个空点的虚线
+      * 画一条三个实点两个空点的虚线
+      * 画一条45度的斜线
+      * 画一条30度的斜线（与x轴的夹角呈30度）
+      * 画一条60度的斜线（与x轴的夹角呈60度）
+      * 画一条跨越画布左上角和右下角的对角线
+      * 画一个空心矩形
+      * 画一个实心矩形
+      * 画两个空心的圆，圆心在画布中心：
+        * 一个半径为50像素
+        * 一个半径为200像素
+      * 画一个实心的圆，半径至少为100像素
+      * 画一个【大小位置都合适】的sin(x)的图像
+      * 画一个贝塞尔曲线（二阶或三阶均可，二阶由三个点确定，三阶由四个点确定）
+
+      * 画出rgb色彩空间的某一面（尺寸要大于100x100）
+      * 如果做出上一题后，尝试将其每个点的坐标乘以一个矩阵（如(2,0,0,2)或(1,0.27得到新的位置，即绘制出被线性变换后的色彩空间某一面
+        可以考虑如下几种矩阵：
+           2 0
+           0 2
+           ------
+           1  0.27
+           0  1
+           ------
+           0.5    0.87
+           -0.87  0.5
+
+   */
+</script>
+<script>
+  // 不可更改上面的代码
+  // 你的代码写在这里
+
+
+  dot(42, 42, "red") // 在 坐标 (42, 42) 画出一个点
+
+
+  for (var i = 0; i < 666; i++) {
+    dot(i, 10)
+  } // 画一条水平实线，粗细为一个像素
+
+  for (var i = 0; i < 666; i++) {
+    dot(10, i)
+  } // 画一条垂直实线，粗细为一个像素
+
+
+  for (var i = 0; i < 666; i++) {
+    if (i % 2 == 0) {
+      dot(20, i, "lime")
+    }
+  } //画一条一个实点一个空点的虚线
+
+  for (var i = 0; i < 666; i++) {
+    if (i % 4 == 0 || i % 4 == 1) {
+      dot(30, i, "pink")
+    }
+  } //画一条两个实点两个空点的虚线
+
+  for (var i = 0; i < 666; i++) {
+    if (i % 5 == 0 || i % 5 == 1 || i % 5 == 2) {
+      dot(40, i, "blue")
+    }
+  }// 画一条三个实点两个空点的虚线
+
+  for (var i = 0; i < 500; i++) {
+    dot(i, i, "cyan")
+  }// 画一条45度的斜线
+
+  for (var i = 0; i < 500; i++) {
+    dot(i, i / Math.sqrt(3), "cyan")
+  }//画一条30度的斜线（与x轴的夹角呈30度）
+
+  for (var i = 0; i < 500; i++) {
+    dot(i / Math.sqrt(3), i, "cyan")
+  }// 画一条60度的斜线（与x轴的夹角呈60度）
+
+
+  for (var i = 0; i < 1000; i++) {
+    dot(i, i, "red")
+  }// 画一条跨越画布左上角和右下角的对角线
+
+
+  for (var i = 500; i < 700; i++) {
+    dot(i, 25, "magenta")
+    dot(i, 125, "magenta")
+  }
+  for (var i = 25; i < 125; i++) {
+    dot(500, i, "magenta")
+    dot(700, i, "magenta")
+  }
+  //画一个空心矩形
+
+
+  for (var i = 500; i < 700; i++) {
+    for (var j = 150; j < 250; j++) {
+      dot(i, j, "magenta")
+    }
+  }//画一个实心矩形
+
+
+
+
+  /*   let r2 = 200
+    for (var i = 500 - r2; i <= 500 + r2; i++) {
+      let j1 = Math.sqrt(r2 * r2 - (i - 500) * (i - 500)) + 500
+      let j2 = -Math.sqrt(r2 * r2 - (i - 500) * (i - 500)) + 500
+      dot(i, j1)
+      dot(i, j2)
+    } */
+
+
+  function drawCircle(cx, cy, r) {
+    for (i = 0; i <= r / Math.sqrt(2); i++) {
+      let j = Math.sqrt(r ** 2 - i ** 2)
+      dot(i + cx, j + cy, "green")
+      dot(-i + cx, j + cy, "green")
+      dot(-i + cx, -j + cy, "green")
+      dot(i + cx, -j + cy, "green")
+      dot(j + cx, i + cy, "green")
+      dot(-j + cx, i + cy, "green")
+      dot(j + cx, -i + cy, "green")
+      dot(-j + cx, -i + cy, "green")
+
+    }
+  }
+  drawCircle(500, 500, 50)
+  drawCircle(500, 500, 200)
+
+
+  function drawCircleSolid(cx, cy, r) {
+    var x0 = 0
+    var y0 = r
+    var x1 = x0
+    var y1 = y0
+    var x2 = x0
+    var y2 = y0
+    while (y0 >= r / Math.sqrt(2)) {
+      var d1 = x1 * x1 + y1 * y1
+      var d2 = x2 * x2 + y1 * y2
+      if (Math.abs(r * r - d1) >= Math.abs(r * r - d2)) {
+        dot(x2 + cx, y2 + cy, "pink")
+        dot(x2 + cx, -y2 + cy, "pink")
+        dot(-x2 + cx, y2 + cy, "pink")
+        dot(-x2 + cx, -y2 + cy, "pink")
+        dot(y2 + cx, x2 + cy, "pink")
+        dot(y2 + cx, -x2 + cy, "pink")
+        dot(-y2 + cx, x2 + cy, "pink")
+        dot(-y2 + cx, -x2 + cy, "pink")
+        for (var i = -y2 + cy; i <= y2 + cy; i++) {
+          dot(x2 + cx, i, "pink")
+          dot(i, x2 + cx, "pink")
+          dot(-x2 + cx, i, "pink")
+          dot(i, -x2 + cx, "pink")
+        }
+        x0 = x2
+        y0 = y2
+      } else {
+        dot(x1 + cx, y1 + cy, "pink")
+        dot(x1 + cx, -y1 + cy, "pink")
+        dot(-x1 + cx, y1 + cy, "pink")
+        dot(-x1 + cx, -y1 + cy, "pink")
+        dot(y1 + cx, x1 + cy, "pink")
+        dot(y1 + cx, -x1 + cy, "pink")
+        dot(-y1 + cx, x1 + cy, "pink")
+        dot(-y1 + cx, -x1 + cy, "pink")
+        x0 = x1
+        y0 = y1
+        for (var i = -y1 + cy; i <= y1 + cy; i++) {
+          dot(x1 + cx, i, "pink")
+          dot(i, x1 + cx, "pink")
+          dot(-x1 + cx, i, "pink")
+          dot(i, -x1 + cx, "pink")
+        }
+      }
+      x1 = x0 + 1
+      y1 = y0
+      x2 = x0 + 1
+      y2 = y0 - 1
+    }
+  }
+  drawCircleSolid(400, 400, 50)
+  //* 画两个空心的圆，圆心在画布中心：
+  //* 一个半径为50像素
+  //* 一个半径为200像素
+  //* 画一个实心的圆，半径至少为100像素
+
+
+  for (i = 0 * Math.PI; i <= 300 * Math.PI; i++) {
+    j = 50 * Math.sin(i / 50) + 100
+    dot(i, j, "blue")
+  }//* 画一个【大小位置都合适】的sin(x)的图像
+
+
+  for (var x = 0; x <= 200; x++) {
+    for (var y = 0; y <= 200; y++) {
+      let r = 256 - x % 256
+      let g = y % 256
+      dot(x + 700, y + 500, "rgb(" + r + "," + g + ", 200)")
+    }
+  }  //* 画出rgb色彩空间的某一面（尺寸要大于100x100）
+
+
+  for (var x = 0; x <= 200; x++) {
+    for (var y = 0; y <= 200; y++) {
+      let r = 256 - x % 256
+      let g = y % 256
+      let x0 = x
+      let y0 = 0.27 * x + y
+      dot(x0 + 700, y0 + 700, "rgb(" + r + "," + g + ", 200)")
+    }
+  }// skew
+
+  for (var x = 0; x <= 200; x++) {
+    for (var y = 0; y <= 200; y++) {
+      let r = 256 - x % 256
+      let g = y % 256
+      let x0 = 0.5 * x + y * (-0.87)
+      let y0 = 0.87 * x + y * 0.5
+      dot(x0 + 200, y0 + 200, "rgb(" + r + "," + g + ", 200)")
+    }
+  }//直接通过旋转矩阵实现旋转
+
+  var theta = Math.PI / 3
+  for (var i = 0; i <= 200; i++) {
+    for (var j = 0; j <= 200; j++) {
+      let r = 256 - i % 256
+      let g = j % 256
+
+      let x = Math.round(i)
+      let y = Math.round(-Math.tan(theta / 2) * i + j)
+
+      x = Math.round(x + Math.sin(theta) * y)
+      y = Math.round(y)
+
+      x = Math.round(x)
+      y = Math.round(-Math.tan(theta / 2) * x + y)
+
+      dot(x + 700, y + 400, "rgb(" + r + "," + g + ", 200)")
+    }
+  }
+
+  //任意二维旋转可以通过 3 个 shear（skew）操作来实现
+
+
+  function position(p0, p1, t) {
+    var r = []
+    for (var i = 0; i <= 1; i++) {
+      r[i] = p0[i] * (1 - t) + p1[i] * t
+    }
+    return r
+  }
+
+  var bezierPoints = function (pgroups, t) {
+    var group = []
+    if (pgroups.length == 1) {
+      return pgroups
+    } else {
+      for (var i = 0; i <= pgroups.length - 2; i++) {
+        group.push(position(pgroups[i], pgroups[i + 1], t))
+      }
+    }
+    return bezierPoints(group, t)
+  }
+
+  function bezierPlot(pgroups) {
+    for (var t = 0; t <= 1; t += 0.0001) {
+      dot(bezierPoints(pgroups, t)[0][0], bezierPoints(pgroups, t)[0][1], t)
+    }
+  }
+
+  //pgroups是一个大数组，包含多个点[[a1,b1],[a2,b2],[a3,b3],[a4,b4],[a5,b5],...]
+  var bezier3 = function (p0, p1, p2, p3, p4) {
+    for (var t = 0; t <= 1; t += 0.0001) {
+      const x1 = position(p0, p1, t)
+      const x2 = position(p1, p2, t)
+      const x3 = position(p2, p3, t)
+      const y1 = position(x1, x2, t)
+      const y2 = position(x2, x3, t)
+      const z = position(y1, y2, t)
+      dot(z[0], z[1])
+    }
+
+  }//画一个贝塞尔曲线（二阶或三阶均可，二阶由三个点确定，三阶由四个点确定）
+  bezier3([0, 0], [50, 700], [680, 50], [450, 860], [20, 660])
+  bezierPlot([[0, 0], [50, 700], [680, 50], [450, 860], [20, 660]])
+
+
+  function line(x1, y1, x2, y2) {
+    var k = (y2 - y1) / (x2 - x1)
+    if (k <= 1 && k > 0) {
+      for (var i = x1, j = y1; i <= x2; i++, j += k) {
+        dot(i, j, "green")
+      }
+    } else if (k > 1) {
+      for (var i = x1, j = y1; i <= x2; j++, i += 1 / k) {
+        dot(i, j, "green")
+      }
+    } else if (k < -1) {
+      for (var i = x1, j = y1; i >= x2; j++, i += 1 / k) {
+        dot(i, j, "green")
+      }
+    }
+  }
+
+
+
+
+
+
+</script>
+
+</html>
